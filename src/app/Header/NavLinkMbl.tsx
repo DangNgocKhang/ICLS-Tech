@@ -33,7 +33,7 @@ const NavLinkMbl: React.FC<NavLinkMblProps> = ({
   return (
     <span
       className={`${
-        isCurrentPath ? colorVisit : colorNoneVisit
+        isCurrentPath ? colorNoneVisit : colorNoneVisit
       } relative`}
       onClick={() => handleOpenSub(path)}
     >

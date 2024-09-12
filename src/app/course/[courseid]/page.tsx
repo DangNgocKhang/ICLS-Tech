@@ -28,6 +28,10 @@ export default function Page({
   return (
     <div>
       <CircularBackground title={title} />
+      <h1 className="visible md:hidden self-center text-2xl md:text-3xl font-bold text-center text-primary-blue-lighter flex flex-col mt-4">
+        <span>Khóa học </span>
+        {title}
+      </h1>
     </div>
   );
 }

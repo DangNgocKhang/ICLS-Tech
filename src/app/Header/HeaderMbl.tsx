@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 // import banner1 from "../../assets/banner1.jpg";
 
-
 const HeaderMbl = () => {
   const [isOpenCategory, setIsOpenCategory] = useState<boolean>(false);
   const divMenuHeaderRef = useRef<HTMLDivElement>(null);
@@ -37,9 +36,8 @@ const HeaderMbl = () => {
         <Image
           src={assets.logoICLS}
           alt="logoICLS"
-          width={600}
+          width={390}
           height={400}
-          
           className="h-[80px] w-auto py-4 md:py-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </Link>

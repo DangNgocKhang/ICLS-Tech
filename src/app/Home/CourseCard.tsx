@@ -17,9 +17,9 @@ const CourseCard: React.FC<CourseCardProps> = ({
   return (
     <Link
       href={path}
-      className="col-span-full md:col-span-4 flex flex-col justify-center items-stretch h-full px-3.5 py-16 my-auto bg-primary-blue-darker w-full xl:w-[300px] group xl:hover:bg-white xl:hover:duration-300 xl:hover:cursor-pointer xl:hover:text-primary-blue-lighter"
+      className="col-span-full md:col-span-4 flex flex-col justify-center items-center h-full px-3.5 py-16 my-auto bg-primary-blue-darker w-full xl:w-[300px] group xl:hover:bg-white xl:hover:duration-300 xl:hover:cursor-pointer xl:hover:text-primary-blue-lighter"
     >
-      <div className="flex flex-col max-w-full w-[292px] ">
+      <div className="flex flex-col justify-center items-center max-w-full w-[292px] ">
         <Image
           loading="lazy"
           src={assets.brain}
