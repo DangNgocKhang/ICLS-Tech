@@ -17,10 +17,11 @@ body {
 
 /* Hide the scrollbar for Internet Explorer, Edge and Firefox */
 .keep-scrolling {
-  -ms-overflow-style: none;  /* Internet Explorer and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-*, html {
+body,
+html {
   scroll-behavior: smooth !important;
 }
