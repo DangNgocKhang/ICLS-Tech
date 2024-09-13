@@ -24,18 +24,18 @@ const CourseCardList: React.FC = () => {
   ];
 
   return (
-    <main className=" bg-primary-blue-lighter px-6 py-10 md:px-10 md:py-20">
+    <main className=" bg-primary-blue-lighter px-6 py-10 md:px-10 md:py-10">
       <div className="flex flex-col justify-center items-center text-center mb-6 text-white">
-        <h1 className="self-center -mt-2 text-6xl font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
+        <h1 className="self-center text-4xl font-bold text-center uppercase text-white max-md:max-w-full max-md:text-4xl">
           Khoá học nổi bật của ICLS Tech
         </h1>
-        <p className="text-xl">
+        <p className="text-lg mt-4">
           Các khoá học của chúng tôi không chỉ truyền tải kiến thức mà còn hướng
           dẫn học viên áp dụng ngay vào thực tế, đảm bảo tính ứng dụng thực tiễn
           cao trong công việc
         </p>
       </div>
-      <div className="grid grid-cols-12 text-center text-white place-items-center gap-4 xl:gap-28">
+      <div className="grid grid-cols-12 text-center text-white place-items-center gap-4 xl:gap-20">
         {courseData.map((course, index) => (
           <CourseCard
             key={index}

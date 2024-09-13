@@ -4,10 +4,10 @@ import Image from "next/image";
 const Vision = () => {
   return (
     <div className="px-6 md:px-10">
-      <h1 className="text-6xl font-bold text-primary-blue-lighter max-md:max-w-full max-md:text-4xl text-left">
+      <h1 className="text-4xl font-bold text-primary-blue-lighter max-md:max-w-full max-md:text-4xl text-left">
         TẦM NHÌN
       </h1>
-      <p className="text-xl leading-8 text-justify  max-md:max-w-full mt-3">
+      <p className="text-lg leading-8 text-justify  max-md:max-w-full mt-3">
         Tầm nhìn của ICLS Tech là trở thành một hình mẫu tiên phong trong lĩnh
         vực đào tạo công nghệ, tài chính, kinh tế và phân tích dữ liệu cho người
         Việt Nam, tạo nên sự hiện diện đáng tin cậy và uy tín trong cộng đồng
@@ -27,7 +27,7 @@ const Vision = () => {
           />
         </div>
         <div className="flex-1 my-auto xl:px-10">
-          <p className="text-xl leading-8 text-justify  max-md:max-w-full mt-3  break-normal">
+          <p className="text-lg leading-8 text-justify  max-md:max-w-full mt-3  break-normal">
             Trước thách thức thế giới công nghệ đang mang lại, chúng tôi thấu
             hiểu rằng sự hội nhập vào dòng chảy toàn cầu đòi hỏi sự chắt lọc kỹ
             năng và kiến thức, và tầm nhìn của chúng tôi chính là giúp mọi học

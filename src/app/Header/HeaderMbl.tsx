@@ -31,14 +31,14 @@ const HeaderMbl = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 h-[85px] w-full bg-white px-0 md:px-4 flex items-center z-50">
+    <div className="fixed top-0 left-0 h-[70px] w-full bg-white px-0 md:px-4 flex items-center z-50">
       <Link href="/">
         <Image
           src={assets.logoICLS}
           alt="logoICLS"
           width={390}
           height={400}
-          className="h-[80px] w-auto py-4 md:py-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="h-[70px] w-auto py-4 md:py-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </Link>
       <div className="h-full w-full flex justify-between items-center shrink-0">
@@ -55,7 +55,7 @@ const HeaderMbl = () => {
       <div
         className={`${
           !isOpenCategory ? "invisible" : "visible"
-        } h-screen w-80 px-5 bg-primary-blue-lighter absolute top-0 left-0 flex flex-col gap-5 text-xl font-semibold text-white`}
+        } h-screen w-80 px-5 bg-primary-blue-lighter absolute top-0 left-0 flex flex-col gap-5 text-lg font-semibold text-white`}
         ref={divMenuHeaderRef}
       >
         <div

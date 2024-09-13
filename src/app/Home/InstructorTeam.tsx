@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import InstructorCard from "./InstructorCard";
 import { assets, listLecturers } from "@/assets/assets";
 import Image from "next/image";
@@ -49,16 +49,63 @@ const InstructorTeam: React.FC = () => {
       image: images[8].src,
     },
   ];
+
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScrollLeft = () => {
+    if (scrollContainerRef.current) {
+      const scrollAmount =
+        window.innerWidth <= 640 ? window.innerWidth : window.innerWidth * 0.5; // Scroll by 50% of the screen width
+      scrollContainerRef.current.scrollTo({
+        left: scrollContainerRef.current.scrollLeft - scrollAmount,
+        behavior: "smooth", // Smooth scrolling effect
+      });
+    }
+  };
+
+  const handleScrollRight = () => {
+    if (scrollContainerRef.current) {
+      const scrollAmount =
+        window.innerWidth <= 640 ? window.innerWidth : window.innerWidth * 0.5; // Scroll by 50% of the screen width
+      scrollContainerRef.current.scrollTo({
+        left: scrollContainerRef.current.scrollLeft + scrollAmount,
+        behavior: "smooth", // Smooth scrolling effect
+      });
+    }
+  };
+
   return (
     <main className="bg-primary-blue-lighter">
-      <section className="flex flex-col px-6 md:px-10 pt-10 md:pt-20">
-        <h1 className="self-center -mt-2 text-6xl font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
+      <section className="flex flex-col px-6 md:px-10 pt-10">
+        <h1 className="self-center -mt-2 text-4xl uppercase font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
           Đội ngũ giảng viên của ICLS Tech
         </h1>
-        <div className="grid grid-cols-12 gap-y-6 lg:gap-10 mt-8 text-white place-items-center justify-self-center">
+        <div
+          className="grid  grid-flow-col auto-cols-max overflow-x-auto hidden-scrolling gap-2 md:gap-6 xl:gap-10 mt-8 text-white place-items-center justify-self-center"
+          ref={scrollContainerRef}
+        >
           {instructors.map((instructor, index) => (
             <InstructorCard key={index} {...instructor} />
           ))}
+        </div>
+        <div className="flex justify-center items-center mt-4 gap-16">
+          <Image
+            src={assets.preWhiteButton}
+            height={60}
+            width={60}
+            alt={`preWhiteButton`}
+            onClick={handleScrollLeft}
+            className="cursor-pointer"
+          />
+
+          <Image
+            src={assets.nextWhiteButton}
+            height={60}
+            width={60}
+            alt={`nextWhiteButton`}
+            onClick={handleScrollRight}
+            className="cursor-pointer"
+          />
         </div>
       </section>
       <Image
@@ -67,7 +114,7 @@ const InstructorTeam: React.FC = () => {
         height={10}
         width={1440}
         alt={`effectWave `}
-        className="w-screen max-md:max-w-full"
+        className="w-screen max-md:max-w-full scale-y-50 "
       />
     </main>
   );

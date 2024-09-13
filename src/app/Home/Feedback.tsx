@@ -76,12 +76,12 @@ const Feedback = () => {
 
   return (
     <div className="px-6 md:px-10">
-      <h1 className="text-6xl font-bold text-primary-blue-lighter mb-6 text-center">
+      <h1 className="text-4xl uppercase font-bold text-primary-blue-lighter mb-6 text-center">
         Feedback từ học viên
       </h1>
       <div
         ref={scrollContainerRef}
-        className="flex gap-4 overflow-x-auto keep-scrolling"
+        className="flex gap-4 overflow-x-auto hidden-scrolling"
       >
         {feedback.map((item, index) => (
           <TestimonialCard

@@ -8,7 +8,7 @@ interface InstructorCardProps {
 
 const InstructorCard: React.FC<InstructorCardProps> = ({ name, image }) => {
   return (
-    <article className="col-span-full lg:col-span-4  xl:p-2.5 w-full lg:w-[280px] xl:w-[400px]">
+    <article className=" xl:p-2.5 w-[155px] md:w-[280px] xl:w-[400px]">
       <Image
         loading="lazy"
         src={image}

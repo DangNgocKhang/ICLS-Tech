@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, iconSrc }
         <img loading="lazy" src={iconSrc} alt="" className="object-contain shrink-0 self-stretch my-auto aspect-square w-[30px]" />
       </div>
       {description && (
-        <p className="mt-5 text-xl leading-8 max-md:max-w-full">{description}</p>
+        <p className="mt-5 text-lg leading-8 max-md:max-w-full">{description}</p>
       )}
     </article>
   );

@@ -15,19 +15,20 @@ const Banner: React.FC = () => {
   }, [images.length]);
   const handleScroll = () => {
     window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth", // Optional: Adds a smooth scrolling effect
+      top:
+        window.innerWidth > 1024 ? window.innerHeight : window.innerHeight - 70,
+      behavior: "smooth",
     });
   };
   return (
     <div className="relative w-full h-max lg:h-screen overflow-x-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-1/2 w-max e z-10 flex">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-max w-max z-10 flex">
         <section className="flex-1 m-auto flex flex-col font-bold text-center uppercase">
           <header className="flex flex-col justify-center w-full text-white max-md:max-w-full font-semibold">
             <h1 className="self-center md:text-2xl">
               CHÀO MỪNG BẠN ĐẾN VỚI ICLS TECH
             </h1>
-            <h2 className="mt-2 lg:mt-5 md:text-6xl lg:text-9xl max-md:max-w-full text-4xl">
+            <h2 className="mt-2 lg:mt-5 md:text-6xl lg:text-7xl max-md:max-w-full text-4xl">
               CỘNG ĐỒNG
             </h2>
             <p className="mt-2 lg:mt-5 text-2xl md:text-3xl lg:text-4xl max-w-[95dvw]">
@@ -35,11 +36,11 @@ const Banner: React.FC = () => {
             </p>
           </header>
           <button
-            className="flex flex-col justify-center self-center p-5 mt-5 max-w-full text-xl text-primary-blue-lighter bg-white min-h-[74px] w-[223px] shadow-register"
+            className="flex flex-col justify-center items-center self-center px-5 py-3 mt-5 max-w-full text-xl text-primary-blue-lighter bg-white h-max w-[223px] shadow-register"
             onClick={handleScroll}
           >
             <span className="flex-1">KHÁM PHÁ NGAY</span>
-            <div className="mt-2.5 w-full bg-primary-blue-lighter border-primary-blue-lighter border-solid h-[3px]" />
+            <div className=" w-full bg-primary-blue-lighter border-primary-blue-lighter border-solid h-[3px]" />
           </button>
         </section>
       </div>

@@ -27,7 +27,7 @@ const LearningPath = () => {
   return (
     <>
       <main className="flex flex-col  justify-center items-center px-6 md:px-10">
-        <h1 className="text-6xl font-bold text-primary-blue-lighter max-md:max-w-full max-md:text-4xl mb-6">
+        <h1 className="text-4xl font-bold uppercase text-center text-primary-blue-lighter max-md:max-w-full max-md:text-4xl mb-6">
           Lộ trình học tập
         </h1>
         <div className="h-1 w-2/3 bg-primary-gray-th1 flex justify-between items-center">

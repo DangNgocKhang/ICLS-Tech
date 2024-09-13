@@ -15,7 +15,7 @@ const ContactInfo: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col my-auto text-xl leading-relaxed text-white max-md:max-w-full ">
+    <div className="flex flex-col my-auto text-base leading-relaxed text-white max-md:max-w-full ">
       <h2 className="text-base text-white max-md:max-w-full">
         Thông tin liên hệ
       </h2>
@@ -29,13 +29,17 @@ const ContactInfo: React.FC = () => {
         >
           <Image
             loading="lazy"
-            height={24}
-            width={24}
+            height={20}
+            width={20}
             src={detail.icon.src}
             alt={detail.alt}
-            className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+            className="object-contain shrink-0 self-stretch my-auto w-5 aspect-square"
           />
-          <div className="my-auto break-normal">{detail.text}</div>
+          {detail.text.includes("www") ? (
+            <a href="#">{detail.text}</a>
+          ) : (
+            <div className="my-auto break-normal">{detail.text}</div>
+          )}
         </div>
       ))}
     </div>

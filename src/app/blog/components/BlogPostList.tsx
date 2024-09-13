@@ -39,7 +39,7 @@ const blogPosts: BlogPost[] = [
 
 const BlogPostList: React.FC = () => {
   return (
-    <main className="h-max w-full overflow-hidden px-6 md:px-10 py-10 md:py-20 grid grid-cols-12 md:gap-16">
+    <main className="h-max w-full overflow-hidden px-6 md:px-10 py-10 grid grid-cols-12 gap-4 md:gap-16">
       <div className="col-span-full xl:col-span-8 ">
         <div className="flex flex-col gap-5">
           {blogPosts &&
@@ -70,7 +70,7 @@ const BlogPostList: React.FC = () => {
               />
             ))}
         </div>
-        <div className="flex flex-col gap-5 h-max bg-gray-100 p-5 mt-9">
+        <div className="flex flex-col gap-5 h-max bg-gray-100 p-5 mt-4 md:mt-9">
           <div className="text-2xl font-bold uppercase mx-auto text-center">
             Bài viết PHỔ BIẾN
           </div>

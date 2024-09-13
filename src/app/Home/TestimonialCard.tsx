@@ -16,7 +16,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   rating,
 }) => {
   return (
-    <article className="flex flex-col justify-center px-5 py-10 bg-primary-blue-lighter rounded-none border border-solid shadow-sm border-white border-opacity-20 w-full md:w-6/12 rounded-bl-lg shrink-0">
+    <article className="flex flex-col justify-center px-5 py-4 md:py-10 bg-primary-blue-lighter rounded-none border border-solid shadow-sm border-white border-opacity-20 w-full md:w-6/12 rounded-bl-lg shrink-0">
       <div className="flex flex-wrap gap-4 items-center w-full max-md:max-w-full">
         <div className="flex flex-col justify-center self-stretch">
           <div className="flex gap-1 items-start">
@@ -46,7 +46,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             />
           </div>
         </div>
-        <div className="flex flex-col flex-1 shrink self-stretch my-auto text-xl text-right basis-0 min-w-[240px]">
+        <div className="flex flex-col flex-1 shrink self-stretch my-auto text-lg text-right basis-0 min-w-[240px]">
           <h2 className="font-bold text-white uppercase">{name}</h2>
           <p className="mt-2.5 leading-none text-white">{course}</p>
         </div>
@@ -54,10 +54,10 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           loading="lazy"
           src={assets.girl}
           alt="avatar"
-          className="object-contain shrink-0 self-stretch my-auto rounded-none aspect-[0.77] w-[85px]"
+          className="hidden md:block object-contain shrink-0 self-stretch my-auto rounded-none aspect-[0.77] w-[85px]"
         />
       </div>
-      <p className="mt-3 text-xl leading-8 text-white max-md:max-w-full">
+      <p className="mt-3 text-lg leading-8 text-white max-md:max-w-full">
         {testimonial}
       </p>
     </article>

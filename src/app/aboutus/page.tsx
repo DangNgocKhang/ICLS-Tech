@@ -38,7 +38,7 @@ export default function Page(): ReactElement {
         height={10}
         width={1440}
         alt={`effectWave `}
-        className="w-screen max-md:max-w-full bg-primary-blue-lighter"
+        className="w-screen max-md:max-w-full bg-primary-blue-lighter scale-y-50"
       />
       <Partner/>
     </div>

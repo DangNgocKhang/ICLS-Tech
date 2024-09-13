@@ -15,7 +15,7 @@ const CourseObjective: React.FC<CourseObjectiveProps> = ({ listObjective }) => {
       <h1 className="self-center text-2xl md:text-3xl font-bold text-center text-primary-blue-lighter max-md:max-w-full">
         MỤC TIÊU KHÓA HỌC
       </h1>
-      <div className="flex flex-col gap-4 mt-2 md:mt-4 text-xl">
+      <div className="flex flex-col gap-4 mt-2 md:mt-4 text-lg">
         {listObjective.map((objective, index) => (
           <div key={index} className="flex flex-col gap-4">
             {objective.title && (

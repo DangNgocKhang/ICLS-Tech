@@ -4,10 +4,10 @@ import Image from "next/image";
 const Mission = () => {
   return (
     <div className="px-6 md:px-10 pb-10 md:pb-20">
-      <h1 className="text-6xl font-bold text-primary-blue-lighter max-md:max-w-full max-md:text-4xl text-left">
+      <h1 className="text-4xl font-bold text-primary-blue-lighter max-md:max-w-full max-md:text-4xl text-left">
         SỨ MỆNH
       </h1>
-      <p className="text-xl leading-8 text-justify  max-md:max-w-full mt-3">
+      <p className="text-lg leading-8 text-justify  max-md:max-w-full mt-3">
         Với tâm huyết từ những chuyên gia giáo dục uy tín cả trong nước và quốc
         tế, ICLS Tech xác lập sứ mệnh “Mang tri thức đến tương lai” nhằm trang
         bị những kiến thức và kỹ năng cần thiết như Phân tích dữ liệu, Fintech,
@@ -27,7 +27,7 @@ const Mission = () => {
             width={630}
             className="object-contain max-w-full aspect-[6.76] w-[630px] mb-5"
           />
-          <p className="text-xl leading-8 text-justify  max-md:max-w-full mt-3  break-normal">
+          <p className="text-lg leading-8 text-justify  max-md:max-w-full mt-3  break-normal">
             Tiên phong mang tri thức của Cuộc cách mạng Công nghiệp 4.0 đến
             người Việt, Chúng tôi tin rằng cùng sự cống hiến và hỗ trợ từ đội
             ngũ của ICLS Tech sẽ thúc đẩy sự hội nhập và phát triển bền vững của

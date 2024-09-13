@@ -46,7 +46,7 @@ const FintechLayout = ({ children }: LayoutProps) => {
   return (
     <>
       {children}
-      <div className="grid grid-cols-12 px-6 md:px-10 py-10 md:py-20 gap-4">
+      <div className="grid grid-cols-12 px-6 md:px-10 py-10 md:py-10 gap-4">
         <CourseObjective listObjective={listObjective} />
         <TargetStudent listTarget={listTarget} />
         <CourseBenefit listBenefit={listBenefit} title={"HỖ TRỢ TỪ ICLS TECH"}/>

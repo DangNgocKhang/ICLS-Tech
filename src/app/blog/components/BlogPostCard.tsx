@@ -16,15 +16,15 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="w-full h-[100px] md:h-[310px] flex">
-      <div className="md:flex-1 overflow-hidden">
+    <div className="w-full h-[100px] md:h-[150px] flex">
+      <div className="md:h-full md:w-[250px] overflow-hidden">
         {
           // eslint-disable-next-line @next/next/no-img-element
           <img
             loading="lazy"
             src={imageUrl ? imageUrl : ""}
             alt="iconTimeCircle"
-            className="object-cover h-[100px] w-[100px] md:h-[310px] md:w-[500px] "
+            className="object-fill h-[100px] w-[100px] md:h-full md:w-full "
           />
         }
       </div>
@@ -46,7 +46,7 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
               {category}
             </div>
           </div>
-          <div className="text-base md:text-4xl font-bold break-normal line-clamp-2 lg:line-clamp-3">
+          <div className="text-base md:text-2xl font-bold break-normal line-clamp-2 md:line-clamp-3">
             {title}
           </div>
         </div>

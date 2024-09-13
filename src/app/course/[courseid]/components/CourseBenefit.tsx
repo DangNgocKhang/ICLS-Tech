@@ -25,7 +25,7 @@ const CourseBenefit: React.FC<CourseBenefitProps> = ({
             }`}
           >
             <LuMilestone className=" text-2xl shrink-0 text-primary-blue-lighter" />
-            <p className=" text-xl text-justify  max-md:max-w-full">{target}</p>
+            <p className=" text-lg text-justify  max-md:max-w-full">{target}</p>
           </div>
         ))}
       </div>
