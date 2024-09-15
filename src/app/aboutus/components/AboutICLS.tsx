@@ -28,7 +28,7 @@ const AboutICLS: React.FC<AboutICLSProps> = () => {
               alt="ICLS Tech"
               height={93}
               width={630}
-              className="object-contain max-w-full aspect-[6.76] w-[630px] mb-5"
+              className="object-contain max-w-full w-[330px] mb-5"
             />
             <div className="flex flex-col self-stretch max-md:max-w-full gap-3">
               <strong className="font-bold text-primary-blue-lighter uppercase text-lg">

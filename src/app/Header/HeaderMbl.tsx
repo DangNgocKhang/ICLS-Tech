@@ -38,7 +38,7 @@ const HeaderMbl = () => {
           alt="logoICLS"
           width={390}
           height={400}
-          className="h-[70px] w-auto py-4 md:py-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="h-[70px] w-auto py-4 md:py-3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </Link>
       <div className="h-full w-full flex justify-between items-center shrink-0">

@@ -55,7 +55,7 @@ const AboutICLS: React.FC<AboutICLSProps> = () => {
               alt="ICLS Tech"
               height={93}
               width={330}
-              className="object-contain my-3 max-w-full w-[330px]"
+              className="object-contain my-3 max-w-full w-[300px]"
             />
 
             <p className="self-stretch mt-0 text-lg leading-8 text-black max-md:mt-0 max-md:mr-2.5 max-md:max-w-full text-justify">

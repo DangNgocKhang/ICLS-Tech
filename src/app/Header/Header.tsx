@@ -11,7 +11,7 @@ const Header = () => {
           href="/"
           className="bg-white h-full w-44 flex justify-center items-center rounded-3xl px-2"
         >
-          <Image src={assets.logoICLS} alt="logoICLS" width={170} height={60} />
+          <Image src={assets.logoICLS} alt="logoICLS" width={170} height={60} className="px-2" />
         </Link>
         <div className="flex-1 flex flex-wrap justify-evenly items-center text-lg font-bold text-white">
           <Navigate

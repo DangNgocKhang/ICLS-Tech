@@ -9,7 +9,7 @@ const LoadingPage = () => {
         alt="logoICLS"
         height={1080}
         width={1920}
-        className="w-3/4 lg:w-auto h-auto lg:h-1/2 m-auto"
+        className="w-3/4 h-auto m-auto"
         priority
       />
     </div>
