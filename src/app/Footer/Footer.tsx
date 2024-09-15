@@ -9,12 +9,12 @@ const Footer: React.FC = () => {
     <footer className="flex overflow-hidden relative flex-col px-10 py-4 w-full h-max max-md:px-5 max-md:max-w-full bg-gradient-to-t md:bg-gradient-to-l from-primary-blue to-primary-blue-lighter">
       <div className="flex flex-col md:flex-row relative gap-5 justify-between items-center max-md:mr-1.5 max-md:max-w-full">
         <div className="flex flex-col flex-1">
-          <div className="m-auto md:m-0 flex justify-center items-center max-w-full bg-white rounded-3xl h-max py-2 w-max">
+          <div className="m-auto md:m-0 flex justify-center items-center max-w-full bg-white rounded-3xl h-max py-2 w-full md:w-max md:px-0 ">
             <Image
               loading="lazy"
               src={assets.logoICLS}
               alt="ICLS Education Logo"
-              className="object-contain w-3/5 "
+              className="object-contain w-[50dvw] md:w-3/5 "
             />
           </div>
           <p className="mt-2 text-base leading-8 text-white max-md:max-w-full">
