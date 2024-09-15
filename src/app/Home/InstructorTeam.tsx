@@ -75,7 +75,7 @@ const InstructorTeam: React.FC = () => {
   };
 
   return (
-    <main className="bg-primary-blue-lighter">
+    <main className="bg-primary-blue-lighter relative md:pb-[75px] xl:pb-[150px]">
       <section className="flex flex-col px-6 md:px-10 pt-10">
         <h1 className="self-center -mt-2 text-4xl uppercase font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
           Đội ngũ giảng viên của ICLS Tech
@@ -88,14 +88,14 @@ const InstructorTeam: React.FC = () => {
             <InstructorCard key={index} {...instructor} />
           ))}
         </div>
-        <div className="flex justify-center items-center mt-4 gap-16">
+        <div className="flex justify-center items-center mt-4 gap-16 z-50">
           <Image
             src={assets.preWhiteButton}
             height={60}
             width={60}
             alt={`preWhiteButton`}
             onClick={handleScrollLeft}
-            className="cursor-pointer"
+            className="cursor-pointer max-md:scale-75"
           />
 
           <Image
@@ -104,7 +104,7 @@ const InstructorTeam: React.FC = () => {
             width={60}
             alt={`nextWhiteButton`}
             onClick={handleScrollRight}
-            className="cursor-pointer"
+            className="cursor-pointer max-md:scale-75"
           />
         </div>
       </section>
@@ -114,7 +114,7 @@ const InstructorTeam: React.FC = () => {
         height={10}
         width={1440}
         alt={`effectWave `}
-        className="w-screen max-md:max-w-full scale-y-50 "
+        className="w-screen scale-y-50 absolute bottom-0 translate-y-14 md:translate-y-16"
       />
     </main>
   );

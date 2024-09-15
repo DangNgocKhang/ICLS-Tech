@@ -2,7 +2,7 @@ import UndevelopedPage from "../PagesState/UndevelopedPage";
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <UndevelopedPage />
     </div>
   );

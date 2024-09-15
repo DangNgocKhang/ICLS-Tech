@@ -35,13 +35,11 @@ const Banner: React.FC = () => {
               Quantitative trading đầu tư định lượng
             </p>
           </header>
-          <button
-            className="flex flex-col justify-center items-center self-center px-5 py-3 mt-5 max-w-full text-xl text-primary-blue-lighter bg-white h-max w-[223px] shadow-register"
-            onClick={handleScroll}
-          >
-            <span className="flex-1">KHÁM PHÁ NGAY</span>
-            <div className=" w-full bg-primary-blue-lighter border-primary-blue-lighter border-solid h-[3px]" />
-          </button>
+          <button className="self-center flex flex-col justify-center items-center px-5 py-3 mt-8 max-w-full text-xl font-bold text-center text-primary-blue-lighter uppercase bg-white shadow-register h-max w-[230px]"
+          onClick={handleScroll}>
+                <span className="flex-1">KHÁM PHÁ NGAY</span>
+                <div className="mt-2.5 w-full bg-primary-blue-lighter border-primary-blue-lighter border-solid h-[3px]" />
+              </button>
         </section>
       </div>
 

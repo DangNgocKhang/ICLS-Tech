@@ -49,7 +49,7 @@ const CustomerService: React.FC = () => {
         height={678}
         width={711}
         alt="effectWaveBlue"
-        className="w-screen max-md:max-w-full"
+        className="w-screen max-md:max-w-full scale-y-75"
       />
     </>
   );

@@ -77,7 +77,7 @@ const AboutICLS: React.FC<AboutICLSProps> = () => {
               </span>
             </p>
             <Link href={"aboutus"}>
-              <button className="self-center md:self-start flex flex-col justify-center items-center px-5 py-3 mt-8 max-w-full text-lg font-bold text-center text-white uppercase bg-primary-blue-lighter shadow-register-blue h-max w-[230px]">
+              <button className="self-center md:self-start flex flex-col justify-center items-center px-5 py-3 mt-8 max-w-full text-xl font-bold text-center text-white uppercase bg-primary-blue-lighter shadow-register-blue h-max w-[230px]">
                 <span className="flex-1">ĐỌC THÊM</span>
                 <div className="mt-2.5 w-full bg-white border-white border-solid h-[3px]" />
               </button>
