@@ -31,6 +31,7 @@ import bgBlog from "./bgBlog.svg";
 import pythonFoundation from "./pythonFoundation.png";
 import effectPoint from "./effectPoint.png";
 import imageBlogHeader from "./imageBlogHeader.png";
+import telephone from "./telephone.png";
 import aboutICLS_2 from "./aboutICLS-2.png";
 import aboutVision from "./aboutVision.png";
 import aboutMission from "./aboutMission.png";
@@ -82,6 +83,7 @@ export const assets = {
   aboutMission,
   aboutCore,
   pageConstruction,
+  telephone,
 };
 
 export const listBanners = [banner1, banner1, banner1];

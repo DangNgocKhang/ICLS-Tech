@@ -12,3 +12,4 @@ export const listSubCourse: ISubNavigate[] = [
 export const listSubBlog: ISubNavigate[] = [
   { path: "blog", title: "Blog" },
 ];
+export const listCourse: string[] = listSubCourse.map(course => course.title);
