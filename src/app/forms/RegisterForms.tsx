@@ -43,9 +43,19 @@ const RegisterForms: React.FC<RegisterFormsProps> = ({
       alert("Vui lòng chọn một khóa học.");
       return;
     }
+
+    // Get the current date in dd-mm-yyyy format
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, "0");
+    const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
+    const year = currentDate.getFullYear();
+    const formattedDate = `${day}-${month}-${year}`;
+
     const formEle = e.currentTarget;
     const formDatab = new FormData(formEle);
-
+    // Append the current date to formDatab
+    formDatab.append("ngaydangky", formattedDate);
+    
     await fetch(process.env.NEXT_PUBLIC_URL_GG_SHEET_REGISTER_COURSE!, {
       method: "POST",
       body: formDatab,
