@@ -96,7 +96,7 @@ const AboutICLS: React.FC<AboutICLSProps> = () => {
         <h1 className="self-center text-4xl font-bold text-center text-primary-blue-lighter max-md:max-w-full max-md:text-4xl">
           Thành tựu ấn tượng
         </h1>
-        <div className="grid grid-cols-12 gap-5 items-center mt-3 w-full">
+        <div className="grid grid-cols-12 gap-2 md:gap-4 items-center mt-3 w-full">
           {achievementsData.map((achievement, index) => (
             <AchievementCard
               key={index}

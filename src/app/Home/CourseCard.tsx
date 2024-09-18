@@ -21,7 +21,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ path, title }) => {
           alt={title}
           height={100}
           width={100}
-          className="block xl:group-hover:hidden object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
+          className="hidden md:block xl:group-hover:hidden object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
         />
         <Image
           loading="lazy"
@@ -29,7 +29,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ path, title }) => {
           alt={title}
           height={100}
           width={100}
-          className="hidden xl:group-hover:block object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
+          className="block md:hidden xl:group-hover:block object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
         />
         <div className="flex flex-col mt-2 md:mt-8 w-full">
           <h2 className="self-center text-sm md:text-xl font-medium md:font-semibold uppercase tracking-tight">{title}</h2>

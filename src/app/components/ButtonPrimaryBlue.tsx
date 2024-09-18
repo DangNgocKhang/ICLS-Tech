@@ -16,7 +16,7 @@ const ButtonPrimaryBlue: React.FC<ButtonPrimaryBlueProps> = ({
   return (
     <button
       type={type}
-      className={`group transition-all duration-300 ease-in-out border hover:border-primary-blue-lighter hover:text-primary-blue-lighter hover:bg-white hover:shadow-register-blue-dark flex flex-col justify-center items-center px-3 py-2 md:py-3 max-w-full text-sm md:text-xl font-bold text-center text-white uppercase bg-primary-blue-lighter shadow-register-blue h-max w-max md:w-[230px] ${stylElement}`}
+      className={`group transition-all duration-300 ease-in-out border hover:border-primary-blue-lighter hover:text-primary-blue-lighter hover:bg-white hover:shadow-register-blue-dark flex flex-col justify-center items-center px-6 md:px-3 py-2 md:py-3 max-w-full text-sm md:text-xl font-bold text-center text-white uppercase bg-primary-blue-lighter shadow-register-blue h-max w-max md:w-[230px] ${stylElement}`}
       onClick={handleClick}
     >
       <span className="flex-1">{value}</span>

@@ -19,7 +19,7 @@ const Mission = () => {
         trong tương lai.
       </p>
       <div className="mt-4 flex flex-col xl:flex-row">
-        <div className="flex-1 my-auto xl:px-10 flex flex-col w-full md:w-8/12">
+        <div className="flex-1 my-auto xl:pr-10 flex flex-col w-full md:w-8/12">
           <Image
             src={assets.logoICLS}
             alt="ICLS Tech"
@@ -27,15 +27,15 @@ const Mission = () => {
             width={630}
             className="object-contain max-w-full aspect-[6.76] w-[430px] m-auto mb-5"
           />
-          <div className="m-auto w-full md:w-4/12">
-          <Image
-            src={assets.aboutMission}
-            alt="aboutICLS Tech"
-            height={453}
-            width={643}
-            className="block md:hidden"
-          />
-        </div>
+          <div className="block md:hidden m-auto w-full">
+            <Image
+              src={assets.aboutMission}
+              alt="aboutMission"
+              height={453}
+              width={643}
+              className=""
+            />
+          </div>
           <p className="md:text-lg font-medium text-justify  max-md:max-w-full mt-3  break-normal">
             Tiên phong mang tri thức của Cuộc cách mạng Công nghiệp 4.0 đến
             người Việt, Chúng tôi tin rằng cùng sự cống hiến và hỗ trợ từ đội

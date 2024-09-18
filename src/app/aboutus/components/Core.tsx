@@ -40,7 +40,7 @@ const Core = () => {
             className="col-span-full xl:col-span-3 h-max overflow-hidden p-5 w-full bg-white bg-opacity-25 border-2 rounded-3xl text-white flex flex-col gap-5"
           >
             <h4 className="text-lg font-bold">{item.title}</h4>
-            <p className="text-justify">{item.description}</p>
+            <p className="text-justify font-medium">{item.description}</p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               loading="lazy"

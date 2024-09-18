@@ -16,7 +16,7 @@ const ButtonPrimaryWhite: React.FC<ButtonPrimaryWhiteProps> = ({
   return (
     <button
       type={type}
-      className={`transition-all duration-300 ease-in-out hover:shadow-register-blue-dark flex flex-col justify-center items-center px-3 py-2 md:py-3 max-w-full text-sm md:text-xl font-bold text-center text-primary-blue-lighter uppercase bg-white shadow-register h-max w-max md:w-[230px] ${stylElement}`}
+      className={`transition-all duration-300 ease-in-out hover:shadow-register-blue-dark flex flex-col justify-center items-center px-6 md:px-3 py-2 md:py-3 max-w-full text-sm md:text-xl font-bold text-center text-primary-blue-lighter uppercase bg-white shadow-register h-max w-max md:w-[230px] ${stylElement}`}
       onClick={handleClick}
     >
       <span className="flex-1">{value}</span>

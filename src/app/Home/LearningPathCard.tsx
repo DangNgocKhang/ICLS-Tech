@@ -40,10 +40,10 @@ const LearningPathCard: React.FC<LearningPathCardProps> = ({
           {title}
         </h5>
 
-        <p className="text-center">{desc}</p>
+        <p className="text-justify px-6 md:px-16">{desc}</p>
       </div>
       <Link href={path}>
-        <ButtonPrimaryBlue value={"TÌM HIỂU THÊM"} stylElement=" lg:mt-8"/>
+        <ButtonPrimaryBlue value={"TÌM HIỂU THÊM"} stylElement=" lg:mt-2" />
       </Link>
     </div>
   );

@@ -27,13 +27,13 @@ const CourseCardList: React.FC = () => {
         <h1 className="mt-10 self-center text-4xl font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
           Khoá học nổi bật của ICLS Tech
         </h1>
-        <p className="md:text-lg mt-4 px-6 tracking-tight	font-light	">
+        <p className="md:text-lg mt-4 px-6 tracking-tight	font-medium	">
           Các khoá học của chúng tôi không chỉ truyền tải kiến thức mà còn hướng
           dẫn học viên áp dụng ngay vào thực tế, đảm bảo tính ứng dụng thực tiễn
           cao trong công việc
         </p>
       </div>
-      <div className="grid grid-cols-12 text-center text-white place-items-center gap-4 px-6 ">
+      <div className="grid grid-cols-12 text-center text-white place-items-center gap-2 md:gap-4 px-6 ">
         {courseData.map((course, index) => (
           <CourseCard key={index} path={course.path} title={course.title} />
         ))}

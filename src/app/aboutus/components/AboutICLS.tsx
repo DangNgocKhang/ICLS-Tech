@@ -28,7 +28,7 @@ const AboutICLS: React.FC<AboutICLSProps> = () => {
               alt="ICLS Tech"
               height={93}
               width={630}
-              className="object-contain max-w-full w-[260px] md:w-[430px] self-center"
+              className="object-contain max-w-full w-[260px] md:w-[330px] self-center"
             />
             <div className="flex flex-col self-stretch max-md:max-w-full gap-3 mt-4 md:mt-0">
               <strong className="font-bold text-primary-blue-lighter uppercase text-lg">
@@ -53,16 +53,14 @@ const AboutICLS: React.FC<AboutICLSProps> = () => {
               liệu (Data Analysis), FinTech, Machine Learning/AI,… nhằm giúp
               người Việt hội nhập vào dòng chảy công nghệ của thế giới, nâng cao
               thu nhập và có thể làm việc tại các công ty công nghệ nước ngoài.
-              <br />
-              <br />
+              <div className="mt-2"></div>
               <span>
                 <FaCircleCheck className="w-6 h-6 text-primary-blue-lighter inline mr-2" />
                 Các khóa học tại ICLS Tech được cố vấn chuyên môn bởi các chuyên
                 gia nước ngoài uy tín về công nghệ, đã có kinh nghiệm quản lý
                 tại các công ty lớn trên thế giới.
               </span>
-              <br />
-              <br />
+              <div className="mt-2"></div>
               <FaCircleCheck className="w-6 h-6 text-primary-blue-lighter inline mr-2" />
               <span>
                 Những giáo viên trực tiếp giảng dạy là những người có chuyên môn
