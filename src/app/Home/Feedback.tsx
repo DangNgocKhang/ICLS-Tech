@@ -16,14 +16,14 @@ const Feedback = () => {
       name: "Phùng Ngọc An",
       course: "Học viên khoá học Algo trade cơ bản 101",
       testimonial:
-        "Qua khoá học, Học viên có thể tham gia khoá học trực tiếp tại trung tâm của ICLS Tech tại Hà Nội (các địa điểm trung tâm liên kết của ICLS) theo lịch khai giảng hàng tháng được cập nhật tại ICLS Tech.",
+        "Mình từng nghĩ rằng không học chuyên về tài chính, kinh tế hay ngôn ngữ lập trình sẽ rất khó tiếp thu vì cơ bản mình chưa biết về những định nghĩa này, khi đến với ICLS Tech mình thay đổi lối suy nghĩ hoàn toàn.",
       rating: 5,
     },
     {
-      name: "Phùng Ngọc An",
+      name: "THUỲ TRANG",
       course: "Học viên khoá học Algo trade cơ bản 101",
       testimonial:
-        "Qua khoá học, Học viên có thể tham gia khoá học trực tiếp tại trung tâm của ICLS Tech tại Hà Nội (các địa điểm trung tâm liên kết của ICLS) theo lịch khai giảng hàng tháng được cập nhật tại ICLS Tech.",
+        "Khoá học Algo Trade 101 cơ bản của ICLS Tech đã mang lại cho mình rất nhiều kiến thức hữu ích về giao dịch tự động. Giảng viên siêu nhiệt tình và có kiến thức sâu rộng, giúp mình dễ dàng nắm bắt các khái niệm cơ bản.",
       rating: 5,
     },
     {
@@ -55,7 +55,9 @@ const Feedback = () => {
   const handleScrollLeft = () => {
     if (scrollContainerRef.current) {
       const scrollAmount =
-        window.innerWidth <= 640 ? window.innerWidth : window.innerWidth * 0.5; // Scroll by 50% of the screen width
+        window.innerWidth <= 640
+          ? window.innerWidth - 24
+          : window.innerWidth * 0.5; // Scroll by 50% of the screen width
       scrollContainerRef.current.scrollTo({
         left: scrollContainerRef.current.scrollLeft - scrollAmount,
         behavior: "smooth", // Smooth scrolling effect
@@ -66,7 +68,9 @@ const Feedback = () => {
   const handleScrollRight = () => {
     if (scrollContainerRef.current) {
       const scrollAmount =
-        window.innerWidth <= 640 ? window.innerWidth : window.innerWidth * 0.5; // Scroll by 50% of the screen width
+        window.innerWidth <= 640
+          ? window.innerWidth - 24
+          : window.innerWidth * 0.5; // Scroll by 50% of the screen width
       scrollContainerRef.current.scrollTo({
         left: scrollContainerRef.current.scrollLeft + scrollAmount,
         behavior: "smooth", // Smooth scrolling effect
@@ -76,12 +80,12 @@ const Feedback = () => {
 
   return (
     <div className="px-6 md:px-10">
-      <h1 className="text-4xl uppercase font-bold text-primary-blue-lighter mb-6 text-center">
+      <h1 className="text-4xl font-bold text-primary-blue-lighter mb-6 text-center">
         Feedback từ học viên
       </h1>
       <div
         ref={scrollContainerRef}
-        className="flex gap-4 overflow-x-auto hidden-scrolling"
+        className="flex gap-6 overflow-x-auto hidden-scrolling"
       >
         {feedback.map((item, index) => (
           <TestimonialCard

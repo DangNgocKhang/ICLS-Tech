@@ -6,33 +6,33 @@ import React from "react";
 interface CourseCardProps {
   path: string;
   title: string;
-  description: string;
 }
 
-const CourseCard: React.FC<CourseCardProps> = ({
-  path,
-  title,
-  description,
-}) => {
+const CourseCard: React.FC<CourseCardProps> = ({ path, title }) => {
   return (
     <Link
       href={path}
-      className="col-span-full md:col-span-4 flex flex-col justify-center items-center h-full px-3.5 py-16 my-auto bg-primary-blue-darker w-full xl:w-[300px] group xl:hover:bg-white xl:hover:duration-300 xl:hover:cursor-pointer xl:hover:text-primary-blue-lighter"
+      className={`col-span-6 lg:col-span-3 flex flex-col justify-center items-center h-full px-2 py-5 md:py-12 lg:py-16 my-auto bg-primary-blue-darker w-full group xl:hover:bg-course-card-hover xl:hover:duration-700 xl:hover:cursor-pointer xl:hover:text-primary-blue-lighter bg-course-card`}
     >
-      <div className="flex flex-col justify-center items-center max-w-full w-[292px] ">
+      <div className="flex-1 flex flex-col justify-start items-center ">
         <Image
           loading="lazy"
-          src={assets.brain}
+          src={assets.brainBlue}
           alt={title}
           height={100}
           width={100}
-          className="object-contain self-center max-w-full aspect-square"
+          className="block xl:group-hover:hidden object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
         />
-        <div className="flex flex-col mt-8 w-full">
-          <h2 className="self-center text-2xl font-semibold">{title}</h2>
-          <p className="mt-5 text-base leading-5 xl:group-hover:text-black">
-            {description}
-          </p>
+        <Image
+          loading="lazy"
+          src={assets.brainBlueLighter}
+          alt={title}
+          height={100}
+          width={100}
+          className="hidden xl:group-hover:block object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
+        />
+        <div className="flex flex-col mt-2 md:mt-8 w-full">
+          <h2 className="self-center text-sm md:text-xl font-medium md:font-semibold uppercase tracking-tight">{title}</h2>
         </div>
       </div>
     </Link>

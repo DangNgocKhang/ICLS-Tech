@@ -19,6 +19,16 @@ const config: Config = {
         "register-blue": "6px 6px 0 0px rgba(9, 181, 248, 0.2)",
         "register-blue-dark": "6px 6px 0 0px rgba(9, 181, 248, 1)",
       },
+      backgroundImage: {
+        "course-card": "url('/bgCourseCard.svg')",
+        "course-card-hover": "url('/bgCourseCardHover.svg')",
+      },
+      rotate: {
+        "20": "20deg",
+      },
+      transitionDuration: {
+        '800': '800ms',
+      }
     },
   },
   plugins: [],

@@ -55,7 +55,9 @@ const InstructorTeam: React.FC = () => {
   const handleScrollLeft = () => {
     if (scrollContainerRef.current) {
       const scrollAmount =
-        window.innerWidth <= 640 ? window.innerWidth : window.innerWidth * 0.5; // Scroll by 50% of the screen width
+        window.innerWidth <= 640
+          ? window.innerWidth - 24
+          : window.innerWidth * 0.5;
       scrollContainerRef.current.scrollTo({
         left: scrollContainerRef.current.scrollLeft - scrollAmount,
         behavior: "smooth", // Smooth scrolling effect
@@ -66,7 +68,9 @@ const InstructorTeam: React.FC = () => {
   const handleScrollRight = () => {
     if (scrollContainerRef.current) {
       const scrollAmount =
-        window.innerWidth <= 640 ? window.innerWidth : window.innerWidth * 0.5; // Scroll by 50% of the screen width
+        window.innerWidth <= 640
+          ? window.innerWidth - 24
+          : window.innerWidth * 0.5;
       scrollContainerRef.current.scrollTo({
         left: scrollContainerRef.current.scrollLeft + scrollAmount,
         behavior: "smooth", // Smooth scrolling effect
@@ -76,12 +80,12 @@ const InstructorTeam: React.FC = () => {
 
   return (
     <main className="bg-primary-blue-lighter relative md:pb-[75px] xl:pb-[150px]">
-      <section className="flex flex-col px-6 md:px-10 pt-10">
-        <h1 className="self-center -mt-2 text-4xl uppercase font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
+      <section className="flex flex-col md:px-10 pt-10">
+        <h1 className="self-center -mt-2 text-4xl font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
           Đội ngũ giảng viên của ICLS Tech
         </h1>
         <div
-          className="grid  grid-flow-col auto-cols-max overflow-x-auto hidden-scrolling gap-2 md:gap-6 xl:gap-10 mt-8 text-white place-items-center justify-self-center"
+          className=" px-6 flex overflow-x-auto hidden-scrolling gap-6 xl:gap-10 mt-8 text-white"
           ref={scrollContainerRef}
         >
           {instructors.map((instructor, index) => (

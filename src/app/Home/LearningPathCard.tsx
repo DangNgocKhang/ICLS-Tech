@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import ButtonPrimaryBlue from "../components/ButtonPrimaryBlue";
 
 interface LearningPathCardProps {
   title: string;
   desc: string;
   image: string;
+  numberImage: string;
   path: string;
 }
 
@@ -12,18 +14,27 @@ const LearningPathCard: React.FC<LearningPathCardProps> = ({
   title,
   desc,
   image,
+  numberImage,
   path,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-between flex-1">
-      <div className="flex flex-col justify-center items-center gap-2">
+    <div className="flex flex-col items-center justify-between md:flex-1 w-screen md:w-auto shrink-0 px-6 md:px-0">
+      <Image
+        loading="lazy"
+        src={numberImage}
+        height={133}
+        width={217}
+        alt={title}
+        className="w-[120px]"
+      />
+      <div className="my-2.5 justify-self-start flex flex-col justify-start items-center gap-2 shrink-0 flex-1">
         <Image
           loading="lazy"
           src={image}
           height={368}
           width={390}
           alt={title}
-          className=" px-8 "
+          className="px-8 w-full h-auto  md:h-[200px] md:w-auto"
         />
         <h5 className="text-primary-blue-lighter text-center font-bold text-xl md:text-lg">
           {title}
@@ -31,12 +42,8 @@ const LearningPathCard: React.FC<LearningPathCardProps> = ({
 
         <p className="text-center">{desc}</p>
       </div>
-      <Link
-        href={path}
-        className="flex flex-col justify-center items-center px-5 py-3 lg:mt-8 max-w-full text-lg font-bold text-center text-white uppercase bg-primary-blue-lighter shadow-register-blue h-max w-[230px]"
-      >
-        <span className="flex-1">TÌM HIỂU THÊM</span>
-        <div className="mt-2.5 w-full bg-white border-white border-solid h-[3px]" />
+      <Link href={path}>
+        <ButtonPrimaryBlue value={"TÌM HIỂU THÊM"} stylElement=" lg:mt-8"/>
       </Link>
     </div>
   );

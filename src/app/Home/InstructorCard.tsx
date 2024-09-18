@@ -8,14 +8,14 @@ interface InstructorCardProps {
 
 const InstructorCard: React.FC<InstructorCardProps> = ({ name, image }) => {
   return (
-    <article className=" xl:p-2.5 w-[155px] md:w-[280px] xl:w-[400px]">
+    <article className=" xl:p-2.5 w-[calc(100vw-48px)] h-auto md:w-[280px] xl:w-[400px] shrink-0">
       <Image
         loading="lazy"
         src={image}
         height={346}
-        width={480}
+        width={400}
         alt={`Portrait of ${name}`}
-        className="object-fill w-full rounded-xl overflow-hidden aspect-[1.39] max-md:max-w-full"
+        className="object-fill w-full rounded-xl overflow-hidden md:aspect-[1.39] max-md:max-w-full"
       />
       {/* Card detail when hover */}
       {/* <div className="  group-hover:cursor-pointer group-hover:visible invisible absolute h-full bg-white top-0 z-20">

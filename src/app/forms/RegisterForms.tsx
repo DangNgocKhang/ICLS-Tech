@@ -5,6 +5,7 @@ import Image from "next/image";
 import { assets } from "@/assets/assets";
 import { listCourse } from "../Header/ListNavigate";
 import FormSelect from "./FormSelect";
+import ButtonPrimaryBlue from "../components/ButtonPrimaryBlue";
 
 interface RegisterFormsProps {
   isRegisterFormsOpen: boolean;
@@ -145,13 +146,7 @@ const RegisterForms: React.FC<RegisterFormsProps> = ({
                 options={listCourse}
                 onChange={handleChange}
               />
-              <button
-                className="self-center flex flex-col justify-center items-center px-5 py-2  max-w-full text-lg font-bold text-center text-white uppercase bg-primary-blue-lighter shadow-register-blue h-max w-[230px]"
-                type="submit"
-              >
-                <span className="flex-1">ĐĂNG KÝ TƯ VẤN</span>
-                <div className="mt-1.5 w-full bg-white border-white border-solid h-[3px]" />
-              </button>
+              <ButtonPrimaryBlue value="ĐĂNG KÝ TƯ VẤN" type="submit"stylElement="self-center"/>
             </form>
           </main>
         </div>

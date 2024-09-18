@@ -1,7 +1,7 @@
 "use client";
 
+import CircularBackground from "@/app/components/CircularBackground";
 import React, { ReactElement, useEffect, useState } from "react";
-import CircularBackground from "./components/CircularBackground";
 
 export default function Page({
   params,
@@ -27,7 +27,7 @@ export default function Page({
   }, [params.courseid]);
   return (
     <div>
-      <CircularBackground title={title} />
+      <CircularBackground title={title} typePage={"course"} />
       <h1 className="visible md:hidden self-center text-2xl md:text-3xl font-bold text-center text-primary-blue-lighter flex flex-col mt-4">
         <span>Khóa học </span>
         {title}

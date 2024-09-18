@@ -6,7 +6,8 @@ import nextBlueButton from "./nextBlueButton.svg";
 import preBlueButton from "./preBlueButton.svg";
 import nextWhiteButton from "./nextWhiteButton.svg";
 import preWhiteButton from "./preWhiteButton.svg";
-import brain from "./brain.svg";
+import brainBlueLighter from "./brainBlueLighter.svg";
+import brainBlue from "./brainBlue.svg";
 import effectWaveBlue from "./effectWaveBlue.svg";
 import iconMenu from "./iconMenu.svg";
 import banner1 from "./banner1.jpg";
@@ -26,9 +27,13 @@ import iconLink from "./iconLink.svg";
 import iconTimeCircle from "./iconTimeCircle.svg";
 import iconTimeCircleBlue from "./iconTimeCircleBlue.svg";
 import pageConstruction from "./pageConstruction.svg";
-import bgCourse from "./bgCourse.svg";
+import bgCourse1 from "./bgCourse1.svg";
+import bgCourse2 from "./bgCourse2.svg";
+import bgCourse3 from "./bgCourse3.svg";
 import bgBlog from "./bgBlog.svg";
 import pythonFoundation from "./pythonFoundation.png";
+import algoTradeCoban from "./algoTradeCoban.png";
+import algoTradeNangcao from "./algoTradeNangcao.png";
 import effectPoint from "./effectPoint.png";
 import imageBlogHeader from "./imageBlogHeader.png";
 import telephone from "./telephone.png";
@@ -36,6 +41,8 @@ import aboutICLS_2 from "./aboutICLS-2.png";
 import aboutVision from "./aboutVision.png";
 import aboutMission from "./aboutMission.png";
 import aboutCore from "./aboutCore.png";
+import aboutHeader from "./aboutHeader.png";
+import aboutPartner from "./aboutPartner.png";
 import lecturerGiang from "./lecturers/lecturerGiang.png";
 import lecturerBaoHieu from "./lecturers/lecturerBaoHieu.png";
 import lecturerDucBao from "./lecturers/lecturerDucBao.png";
@@ -46,7 +53,22 @@ import lecturerThuHoa from "./lecturers/lecturerThuHoa.jpg";
 import lecturerTuanAnh from "./lecturers/lecturerTuanAnh.jpg";
 import lecturerVanThanh from "./lecturers/lecturerVanThanh.jpg";
 
+// Blog
+import blog1 from "./blog/blog1.png";
+import blog2 from "./blog/blog2.png";
+import blog3 from "./blog/blog3.png";
+
+// Introduce
+import image1 from "./introduce/image1.png";
+import image2 from "./introduce/image2.png";
+import image3 from "./introduce/image3.png";
+
+export const listIntroduce = [image1, image2, image3, image2, image1, image3];
+
 export const assets = {
+  blog1,
+  blog2,
+  blog3,
   logoICLS,
   iconSearch,
   iconSearchBlue,
@@ -57,7 +79,8 @@ export const assets = {
   preBlueButton,
   nextWhiteButton,
   preWhiteButton,
-  brain,
+  brainBlueLighter,
+  brainBlue,
   effectWaveBlue,
   rectangle18,
   girl,
@@ -65,6 +88,8 @@ export const assets = {
   num02,
   num03,
   pythonFoundation,
+  algoTradeCoban,
+  algoTradeNangcao,
   effectPoint,
   iconFB,
   iconTiktok,
@@ -76,7 +101,11 @@ export const assets = {
   iconTimeCircle,
   iconTimeCircleBlue,
   aboutICLS_2,
-  bgCourse,
+  aboutHeader,
+  aboutPartner,
+  bgCourse1,
+  bgCourse2,
+  bgCourse3,
   bgBlog,
   imageBlogHeader,
   aboutVision,

@@ -1,3 +1,4 @@
+import ButtonPrimaryWhite from "@/app/components/ButtonPrimaryWhite";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 
@@ -33,12 +34,7 @@ const CircularBackground: React.FC = () => {
               Học tập hiệu quả với phương pháp tự điều chỉnh
             </h2>
 
-            <div className=" w-[210px]  hover:cursor-pointer">
-              <div className="h-max w-full py-3 px-5 bg-white flex flex-col justify-center items-center text-lg text-primary-blue-lighter font-bold shadow-register">
-                <span>ĐỌC NGAY</span>
-                <div className="w-3/4 h-[3px] bg-primary-blue-lighter"></div>
-              </div>
-            </div>
+            <ButtonPrimaryWhite value="ĐỌC NGAY"/>
           </div>
         </div>
         <div className="hidden flex-1 xl:flex">

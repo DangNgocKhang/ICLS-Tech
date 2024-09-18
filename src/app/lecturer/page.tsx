@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
-import CircularBackground from "./components/CircularBackground";
 import { listLecturers } from "@/assets/assets";
 import InstructorCard from "./components/InstructorCard";
+import CircularBackground from "../components/CircularBackground";
 interface Instructor {
   name: string;
   image: string;

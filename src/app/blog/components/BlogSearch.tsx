@@ -12,7 +12,6 @@ const BlogSearch: React.FC = () => {
     "#machinelearning",
     "#Tất cả",
     "#data",
-    "#machinelearning",
   ];
   return (
     <main className="flex flex-col justify-center items-center p-10 leading-relaxed bg-zinc-100 max-md:px-5">

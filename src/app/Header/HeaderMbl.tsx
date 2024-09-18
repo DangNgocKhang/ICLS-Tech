@@ -4,6 +4,7 @@ import NavigateMbl from "./NavigateMbl";
 import { assets } from "../../assets/assets";
 import Link from "next/link";
 import Image from "next/image";
+import { PiListBold } from "react-icons/pi";
 // import banner1 from "../../assets/banner1.jpg";
 
 const HeaderMbl = () => {
@@ -31,31 +32,35 @@ const HeaderMbl = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 h-[70px] w-full bg-white px-0 md:px-4 flex items-center z-50">
+    <div className="fixed top-0 left-0 h-[70px] w-full bg-primary-blue-lighter px-0 md:px-4 flex items-center z-50">
       <Link href="/">
         <Image
           src={assets.logoICLS}
           alt="logoICLS"
           width={390}
           height={400}
-          className="h-[70px] w-auto py-4 md:py-3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="h-[40px] w-auto md:h-[55px] md:w-max bg-white p-2 md:px-10 rounded-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </Link>
       <div className="h-full w-full flex justify-between items-center shrink-0">
+        <PiListBold
+          className="h-3/5 w-auto shrink-0 p-1 md:p-0 text-white"
+          onClick={handleClickOpenCategory}
+        />
+
         <Image
-          src={assets.iconMenu}
+          src={assets.iconSearch}
           alt="iconMenu"
           width={30}
           height={30}
-          className="h-3/5 w-auto shrink-0 p-1"
-          onClick={handleClickOpenCategory}
+          className="h-3/5 w-auto shrink-0 p-2 md:p-0"
         />
       </div>
 
       <div
         className={`${
-          !isOpenCategory ? "invisible" : "visible"
-        } h-screen w-80 px-5 bg-primary-blue-lighter absolute top-0 left-0 flex flex-col gap-5 text-lg font-semibold text-white`}
+          !isOpenCategory ? "hidden" : "flex"
+        } h-screen w-80 px-5 bg-primary-blue-darker absolute top-0 left-0  flex-col gap-5 text-lg font-semibold text-white`}
         ref={divMenuHeaderRef}
       >
         <div

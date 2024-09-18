@@ -17,7 +17,7 @@ const Header = () => {
         <div className="h-full w-10/12 bg-primary-blue-lighter p-4 flex items-center shrink-0">
           <Link
             href="/"
-            className="bg-white h-full w-44 flex justify-center items-center rounded-3xl px-2"
+            className="bg-white h-full w-44 flex justify-center items-center rounded-xl px-2"
           >
             <Image
               src={assets.logoICLS}
@@ -46,7 +46,7 @@ const Header = () => {
         </div>
         <div className="h-full w-3/12 px-5 hover:cursor-pointer flex justify-center items-center">
           <div
-            className="h-max w-full py-3 bg-white flex flex-col justify-center items-center text-lg text-primary-blue-lighter font-bold shadow-register"
+            className="transition-all duration-300 ease-in-out hover:shadow-register-blue-dark h-max w-full py-3 bg-white flex flex-col justify-center items-center text-lg text-primary-blue-lighter font-bold shadow-register"
             onClick={openRegisterForms}
           >
             <span>ĐĂNG KÝ</span>
