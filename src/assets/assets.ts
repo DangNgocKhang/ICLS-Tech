@@ -43,15 +43,15 @@ import aboutMission from "./aboutMission.png";
 import aboutCore from "./aboutCore.png";
 import aboutHeader from "./aboutHeader.png";
 import aboutPartner from "./aboutPartner.png";
-import lecturerGiang from "./lecturers/lecturerGiang.webp";
-import lecturerBaoHieu from "./lecturers/lecturerBaoHieu.webp";
-import lecturerDucBao from "./lecturers/lecturerDucBao.webp";
-import lecturerDucHoa from "./lecturers/lecturerDucHoa.webp";
-import lecturerHaNgan from "./lecturers/lecturerHaNgan.webp";
-import lecturerNelson from "./lecturers/lecturerNelson.webp";
-import lecturerThuHoa from "./lecturers/lecturerThuHoa.webp";
-import lecturerTuanAnh from "./lecturers/lecturerTuanAnh.webp";
-import lecturerVanThanh from "./lecturers/lecturerVanThanh.webp";
+import lecturerGiang from "./lecturers/lecturerGiang.png";
+import lecturerBaoHieu from "./lecturers/lecturerBaoHieu.png";
+import lecturerDucBao from "./lecturers/lecturerDucBao.png";
+import lecturerDucHoa from "./lecturers/lecturerDucHoa.jpg";
+import lecturerHaNgan from "./lecturers/lecturerHaNgan.jpg";
+import lecturerNelson from "./lecturers/lecturerNelson.jpg";
+import lecturerThuHoa from "./lecturers/lecturerThuHoa.jpg";
+import lecturerTuanAnh from "./lecturers/lecturerTuanAnh.jpg";
+import lecturerVanThanh from "./lecturers/lecturerVanThanh.jpg";
 
 // Blog
 import blog1 from "./blog/blog1.png";
