@@ -12,7 +12,7 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
   description,
 }) => {
   return (
-    <section className="h-full col-span-6 xl:col-span-3 flex flex-col grow shrink justify-center self-stretch px-2 md:px-5 p-6 md:py-9 my-auto bg-white border border-primary-blue-lighter border-solid ">
+    <section className="col-span-6 xl:col-span-3 flex flex-col grow shrink justify-center self-stretch px-2 md:px-5 p-6 md:py-9 my-auto bg-white border border-primary-blue-lighter border-solid ">
       <div className="flex flex-col w-full">
         <div className="flex gap-2 md:gap-5 justify-center items-center self-center text-5xl font-bold text-primary-blue-lighter whitespace-nowrap max-md:text-4xl">
           {
