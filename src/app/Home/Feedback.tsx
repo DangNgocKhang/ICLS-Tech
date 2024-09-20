@@ -116,14 +116,6 @@ const Feedback = () => {
           className="cursor-pointer"
         />
       </div>
-      <Image
-        loading="lazy"
-        src={assets.effectPoint}
-        height={321}
-        width={1440}
-        alt="effectPoint"
-        className="w-screen max-md:max-w-full"
-      />
     </div>
   );
 };

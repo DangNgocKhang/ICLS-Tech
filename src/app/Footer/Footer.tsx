@@ -3,6 +3,7 @@ import SocialLinks from "./SocialLinks";
 import ContactInfo from "./ContactInfo";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -10,14 +11,17 @@ const Footer: React.FC = () => {
       <footer className="flex overflow-hidden relative flex-col px-10 py-4 w-full h-max max-md:px-5 max-md:max-w-full bg-gradient-to-l from-primary-blue to-primary-blue-lighter">
         <div className="flex flex-col md:flex-row relative gap-5 justify-between items-center max-md:mr-1.5 max-md:max-w-full">
           <div className="flex flex-col flex-1">
-            <div className=" flex justify-center items-center max-w-full bg-white rounded-2xl h-max py-2 px-2.5 w-max md:px-0 ">
+            <Link
+              href={"/"}
+              className=" flex justify-center items-center max-w-full bg-white rounded-2xl h-max py-2 px-2.5 w-max md:px-0 "
+            >
               <Image
                 loading="lazy"
                 src={assets.logoICLS}
                 alt="ICLS Education Logo"
                 className="object-contain w-[50dvw] md:w-3/5 "
               />
-            </div>
+            </Link>
             <p className="mt-2 text-base leading-8 text-white max-md:max-w-full">
               Bridging the gap, Embracing the future!
               <br />
@@ -33,12 +37,12 @@ const Footer: React.FC = () => {
                 type="email"
                 id="emailInput"
                 placeholder="Điền thông tin email"
-                className="flex-1 shrink leading-8 text-gray-400 focus:outline-none"
+                className="flex-1 shrink  focus:outline-none px-2 md:px-4"
                 aria-label="Điền thông tin email của bạn"
               />
               <button
                 type="submit"
-                className="gap-2.5 self-stretch px-4 xl:px-10 py-1 xl:py-3 h-max m-auto leading-relaxed text-center text-white bg-primary-blue-lighter shadow-lg rounded-[50px] max-md:px-5"
+                className="font-medium gap-2.5 self-stretch px-4 xl:px-10 py-1 xl:py-2 h-max m-auto leading-relaxed text-center text-white bg-primary-blue-lighter shadow-lg rounded-[50px] max-md:px-5"
               >
                 GỬI
               </button>

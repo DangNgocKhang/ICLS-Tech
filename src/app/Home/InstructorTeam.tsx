@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import InstructorCard from "./InstructorCard";
 import { assets, listLecturers } from "@/assets/assets";
 import Image from "next/image";
+import { SplitEffectWave } from "../components/SplitEffect";
 
 interface Instructor {
   name: string;
@@ -79,7 +80,7 @@ const InstructorTeam: React.FC = () => {
   };
 
   return (
-    <main className="bg-primary-blue-lighter relative md:pb-[75px] xl:pb-[150px]">
+    <main className="bg-primary-blue-lighter relative">
       <section className="flex flex-col md:px-10 pt-10">
         <h1 className="self-center -mt-2 text-4xl font-bold text-center text-white max-md:max-w-full max-md:text-4xl">
           Đội ngũ giảng viên của ICLS Tech
@@ -112,14 +113,8 @@ const InstructorTeam: React.FC = () => {
           />
         </div>
       </section>
-      <Image
-        loading="lazy"
-        src={assets.effectWave}
-        height={10}
-        width={1440}
-        alt={`effectWave `}
-        className="w-screen scale-y-50 absolute bottom-0 translate-y-14 md:translate-y-16"
-      />
+      <SplitEffectWave />
+
     </main>
   );
 };

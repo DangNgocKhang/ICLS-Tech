@@ -1,5 +1,4 @@
 import { assets } from "@/assets/assets";
-import Image from "next/image";
 import LearningPathCard from "./LearningPathCard";
 
 const LearningPath = () => {
@@ -28,39 +27,28 @@ const LearningPath = () => {
   ];
 
   return (
-    <>
-      <main className="flex flex-col justify-center items-center px-6 md:px-10">
-        <h1 className="text-4xl font-bold text-center text-primary-blue-lighter max-md:max-w-full max-md:text-4xl mb-6">
-          Lộ trình học tập
-        </h1>
-        <div className="h-1 w-2/3 bg-primary-gray-th1 hidden md:flex justify-between items-center">
-          <span className="h-4 aspect-square rounded-full bg-primary-blue-lighter"></span>
-          <span className="h-4 aspect-square rounded-full bg-primary-blue-lighter"></span>
-          <span className="h-4 aspect-square rounded-full bg-primary-blue-lighter"></span>
-        </div>
-        {/* <div className="flex flex-col md:flex-row mt-6 gap-6 lg:gap-24"> */}
-        <div className="flex flex-row md:mt-6 gap-6 lg:gap-20 w-screen md:w-auto overflow-x-auto hidden-scrolling pb-2">
-          {learningPathData.map((data, index) => (
-            <LearningPathCard
-              key={index}
-              title={data.title}
-              desc={data.desc}
-              image={data.image}
-              numberImage={data.numberImage}
-              path={data.path}
-            />
-          ))}
-        </div>
-      </main>
-      <Image
-        loading="lazy"
-        src={assets.effectWaveBlue}
-        height={678}
-        width={711}
-        alt="effectWaveBlue"
-        className="w-screen max-md:max-w-full"
-      />
-    </>
+    <main className="flex flex-col justify-center items-center px-6 md:px-10">
+      <h1 className="text-4xl font-bold text-center text-primary-blue-lighter max-md:max-w-full max-md:text-4xl mb-6">
+        Lộ trình học tập
+      </h1>
+      <div className="h-1 w-2/3 bg-primary-gray-th1 hidden md:flex justify-between items-center">
+        <span className="h-4 aspect-square rounded-full bg-primary-blue-lighter"></span>
+        <span className="h-4 aspect-square rounded-full bg-primary-blue-lighter"></span>
+        <span className="h-4 aspect-square rounded-full bg-primary-blue-lighter"></span>
+      </div>
+      <div className="flex flex-row md:mt-6 gap-6 lg:gap-20 w-screen md:w-auto overflow-x-auto hidden-scrolling pb-4 md:pb-2">
+        {learningPathData.map((data, index) => (
+          <LearningPathCard
+            key={index}
+            title={data.title}
+            desc={data.desc}
+            image={data.image}
+            numberImage={data.numberImage}
+            path={data.path}
+          />
+        ))}
+      </div>
+    </main>
   );
 };
 

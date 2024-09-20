@@ -19,15 +19,15 @@ const Mission = () => {
         trong tương lai.
       </p>
       <div className="mt-4 flex flex-col xl:flex-row">
-        <div className="flex-1 my-auto xl:pr-10 flex flex-col w-full md:w-8/12">
+        <div className="flex-1 my-auto xl:pr-10 flex flex-col w-full xl:w-8/12">
           <Image
             src={assets.logoICLS}
             alt="ICLS Tech"
             height={93}
             width={630}
-            className="object-contain max-w-full aspect-[6.76] w-[430px] m-auto mb-5"
+            className="object-contain max-w-full w-[260px] md:w-[330px] m-auto mb-5"
           />
-          <div className="block md:hidden m-auto w-full">
+          <div className="flex xl:hidden m-auto w-full justify-center">
             <Image
               src={assets.aboutMission}
               alt="aboutMission"
@@ -49,7 +49,7 @@ const Mission = () => {
             alt="aboutICLS Tech"
             height={453}
             width={643}
-            className="hidden md:block"
+            className="hidden xl:block"
           />
         </div>
       </div>

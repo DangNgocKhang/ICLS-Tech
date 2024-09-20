@@ -11,7 +11,7 @@ const ContactInfo: React.FC = () => {
       text: "7F Charmvit Tower, Trung Hoà, Cầu Giấy, Hà Nội",
       alt: "Location icon",
     },
-    { icon: assets.iconLink, text: "www.iclstechedu.vn", alt: "Website icon" },
+    { icon: assets.iconLink, text: "www.iclstech.edu.vn", alt: "Website icon" },
   ];
 
   return (
@@ -36,7 +36,7 @@ const ContactInfo: React.FC = () => {
             className="object-contain shrink-0 self-stretch my-auto w-5 aspect-square"
           />
           {detail.text.includes("www") ? (
-            <a href="#">{detail.text}</a>
+            <a href="https://iclstech.edu.vn/">{detail.text}</a>
           ) : (
             <div className="my-auto break-normal">{detail.text}</div>
           )}

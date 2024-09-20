@@ -1,5 +1,6 @@
 "use client";
 
+import { SplitEffectPoint, SplitEffectWaveblue } from "./components/SplitEffect";
 import AboutICLS from "./Home/AboutICLS";
 import Banner from "./Home/Banner";
 import BlogSharing from "./Home/BlogSharing";
@@ -18,9 +19,13 @@ export default function Home() {
       <InstructorTeam />
       <CourseCardList />
       <CustomerService />
+      <SplitEffectWaveblue />
       <LearningPath />
+      <SplitEffectWaveblue />
       <Feedback />
+      <SplitEffectPoint/>
       <BlogSharing />
+      <SplitEffectPoint />
       <ImageIntroduce />
     </div>
   );

@@ -17,16 +17,16 @@ const Vision = () => {
         trong môi trường làm việc toàn cầu.
       </p>
       <div className="mt-4 flex flex-col xl:flex-row">
-        <div className="m-auto w-full md:w-4/12">
+        <div className="m-auto w-full xl:w-4/12 flex">
           <Image
             src={assets.aboutVision}
             alt="aboutICLS Tech"
             height={453}
             width={643}
-            className=""
+            className="m-auto"
           />
         </div>
-        <div className="flex-1 my-auto xl:px-10 w-full md:w-8/12">
+        <div className="flex-1 my-auto xl:px-10 w-full xl:w-8/12">
           <p className="md:text-lg font-medium text-justify  max-md:max-w-full mt-3  break-normal">
             Trước thách thức thế giới công nghệ đang mang lại, chúng tôi thấu
             hiểu rằng sự hội nhập vào dòng chảy toàn cầu đòi hỏi sự chắt lọc kỹ

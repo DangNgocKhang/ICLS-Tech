@@ -19,14 +19,7 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ name, image }) => {
       />
       {/* Card detail when hover */}
       {/* <div className="  group-hover:cursor-pointer group-hover:visible invisible absolute h-full bg-white top-0 z-20">
-        <Image
-          loading="lazy"
-          src={assets.effectWaveBlue}
-          height={28}
-          width={261}
-          alt="effectWaveBlue"
-          className="absolute top-1 z-30"
-        />
+              <SplitEffectWaveblue />
         <article className="py-7 flex flex-col justify-center px-3 bg-white rounded-xl min-w-[240px] w-full lg:w-[400px] max-md:max-w-full">
           <header className="gap-2.5 self-stretch p-1 w-full text-2xl font-semibold text-white bg-primary-blue shadow-register-blue-dark">
             Giảng viên
@@ -44,14 +37,8 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ name, image }) => {
             Springer, Elsevier.,
           </section>
         </article>
-        <Image
-          loading="lazy"
-          src={assets.effectWaveBlue}
-          height={28}
-          width={261}
-          alt="effectWaveBlue"
-          className="rotate-180 absolute -bottom-4 right-0 z-30"
-        />
+              <SplitEffectWaveblue />
+
       </div> */}
     </article>
   );

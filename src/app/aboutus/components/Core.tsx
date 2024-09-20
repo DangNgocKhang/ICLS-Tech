@@ -33,11 +33,11 @@ const Core = () => {
       <h1 className="text-4xl font-bold text-white max-md:max-w-full max-md:text-4xl text-center uppercase">
         Giá trị cốt lõi
       </h1>
-      <div className="grid grid-cols-12 mt-6 gap-5">
+      <div className="grid grid-cols-12 grid-auto-rows-fr mt-6 gap-5">
         {contentItems.map((item, index) => (
           <div
             key={index}
-            className="col-span-full xl:col-span-3 h-max overflow-hidden p-5 w-full bg-white bg-opacity-25 border-2 rounded-3xl text-white flex flex-col gap-5"
+            className="col-span-full xl:col-span-3 h-full overflow-hidden p-5 w-full bg-white bg-opacity-25 border-2 rounded-3xl text-white flex flex-col gap-5"
           >
             <h4 className="text-lg font-bold">{item.title}</h4>
             <p className="text-justify font-medium">{item.description}</p>
