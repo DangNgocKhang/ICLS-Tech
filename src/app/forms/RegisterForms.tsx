@@ -16,6 +16,8 @@ const RegisterForms: React.FC<RegisterFormsProps> = ({
   isRegisterFormsOpen,
   closeRegisterForms,
 }) => {
+  const [isSubmit, setIsSubmit] = useState<boolean>(false);
+
   const [formData, setFormData] = useState({
     hovaten: "",
     sodienthoai: "",
@@ -40,6 +42,7 @@ const RegisterForms: React.FC<RegisterFormsProps> = ({
   // Handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmit(true);
     if (formData.tenkhoahoc === "") {
       alert("Vui lòng chọn một khóa học.");
       return;
@@ -56,7 +59,7 @@ const RegisterForms: React.FC<RegisterFormsProps> = ({
     const formDatab = new FormData(formEle);
     // Append the current date to formDatab
     formDatab.append("ngaydangky", formattedDate);
-    
+
     await fetch(process.env.NEXT_PUBLIC_URL_GG_SHEET_REGISTER_COURSE!, {
       method: "POST",
       body: formDatab,
@@ -70,6 +73,7 @@ const RegisterForms: React.FC<RegisterFormsProps> = ({
       truonghoaccongty: "",
       tenkhoahoc: "",
     });
+    setIsSubmit(false);
     closeRegisterForms();
   };
 
@@ -146,7 +150,12 @@ const RegisterForms: React.FC<RegisterFormsProps> = ({
                 options={listCourse}
                 onChange={handleChange}
               />
-              <ButtonPrimaryBlue value="ĐĂNG KÝ TƯ VẤN" type="submit"stylElement="self-center"/>
+              <ButtonPrimaryBlue
+                value="ĐĂNG KÝ TƯ VẤN"
+                type="submit"
+                stylElement="self-center"
+                disable={isSubmit}
+              />
             </form>
           </main>
         </div>

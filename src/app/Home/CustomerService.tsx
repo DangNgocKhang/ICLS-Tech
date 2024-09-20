@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const CustomerService: React.FC = () => {
   return (
-    <main className="flex flex-col  md:px-10 pt-10 ">
+    <main className="flex flex-col  md:px-10 pt-10 pb-2.5 md:pb-0">
       <h1 className="self-center -mt-2 text-4xl font-bold text-center text-primary-blue-lighter max-md:max-w-full max-md:text-4xl mb-6">
         Đa dạng hình thức học tập
       </h1>

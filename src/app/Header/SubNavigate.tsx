@@ -21,7 +21,7 @@ const SubNavigate: React.FC<SubNavigateProps> = ({
   currentPath,
 }) => {
   return (
-    <div className="absolute top-7 -left-6 h-max w-max px-6 pb-4 pt-4 flex flex-col gap-4 bg-primary-blue-lighter rounded-b-lg">
+    <div className="absolute top-7 -left-6 h-max w-max max-w-[400px] px-6 pb-4 pt-4 flex flex-col gap-4 bg-primary-blue-lighter rounded-b-lg">
       {listSubNav.map((nav) => (
         <div key={nav.path}>
           <Link href={`/${nav.path}`}>

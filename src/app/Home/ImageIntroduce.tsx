@@ -1,4 +1,5 @@
 import { listIntroduce } from "@/assets/assets";
+import Image from "next/image";
 
 const ImageIntroduce = () => {
   return (
@@ -11,9 +12,10 @@ const ImageIntroduce = () => {
       <div className="grid grid-cols-12 overflow-hidden">
         {listIntroduce.map((image, index) => {
           return (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <Image
               key={index}
+              width={488}
+              height={361}
               src={image.src}
               alt="introduce image"
               className="col-span-4 w-full h-[120px] md:h-[200px] object-cover"
