@@ -8,21 +8,21 @@ const LearningPath = () => {
       desc: "Python là một trong những ngôn ngữ lập trình phổ biến và mạnh mẽ nhất hiện nay, tích hợp nhiều công cụ hữu ích.",
       image: assets.pythonFoundation.src,
       numberImage: assets.num01.src,
-      path: "/course/Python-Foundation",
+      path: "/khoa-hoc/Python-Foundation",
     },
     {
       title: "Algo Trade Foundation 101",
       desc: "Kiến thức nền tảng về giao dịch tự động (Algorithmic Trading), giúp hiểu rõ cách thức hoạt động và ứng dụng các thuật toán.",
       image: assets.algoTradeCoban.src,
       numberImage: assets.num02.src,
-      path: "/course/Algo-Trade-101",
+      path: "/khoa-hoc/khoa-hoc-algorithmic-trading-machine-learning-co-ban-101",
     },
     {
       title: "Algo Trade Advanced 201",
       desc: "Kiến thức cơ bản về giao dịch tự động và muốn khám phá các chiến lược phức tạp hơn và kỹ thuật nâng cao.",
       image: assets.algoTradeNangcao.src,
       numberImage: assets.num03.src,
-      path: "/course/Algo-Trade-201",
+      path: "/khoa-hoc/khoa-hoc-algorithmic-trading-machine-learning-foundation-201",
     },
   ];
 

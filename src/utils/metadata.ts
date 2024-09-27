@@ -9,7 +9,7 @@ export const generateMetadataCourse = (courseid: string): Metadata => {
         title: "Khóa học Algorithmic Trading & Machine learning 101 cơ bản",
         description:
           "Khóa học Algorithmic Trading cung cấp kiến thức toàn diện về giao dịch thuật toán bằng Python. Học viên sẽ khám phá thị trường tài chính, xây dựng bot trading, sử dụng API để truy cập dữ liệu, áp dụng phân tích kỹ thuật và mô hình dự báo, giúp bạn triển khai hệ thống giao dịch hiệu quả trên thị trường chứng khoán, Forex và cryptocurrency.",
-        url: "https://iclstech.edu.vn/course/Algo-Trade-101",
+        url: "https://iclstech.edu.vn/khoa-hoc/khoa-hoc-algorithmic-trading-machine-learning-co-ban-101",
         keywords: [
           "Algorithmic Trading bằng Python",
           "Khóa học giao dịch thuật toán",
@@ -40,7 +40,7 @@ export const generateMetadataCourse = (courseid: string): Metadata => {
         title: "Khóa học Algorithmic Trading & Machine learning 201 nâng cao",
         description:
           "Khóa học Algorithmic Trading Advanced được thiết kế cho chuyên gia tài chính và nhà phân tích định lượng, giúp hiểu sâu về toán học trong mô hình tài chính và giao dịch thuật toán. Khám phá các kỹ thuật nâng cao trong định giá chứng khoán phái sinh, tối ưu hóa danh mục đầu tư và quản lý rủi ro.",
-        url: "https://iclstech.edu.vn/course/Algo-Trade-201",
+        url: "https://iclstech.edu.vn/khoa-hoc/khoa-hoc-algorithmic-trading-machine-learning-foundation-201",
         keywords: [
           "Algorithmic Trading Advanced",
           "Khóa học giao dịch thuật toán nâng cao",
@@ -76,7 +76,7 @@ export const generateMetadataCourse = (courseid: string): Metadata => {
         title: "Khoá học Fintech - Công nghệ tài chính",
         description:
           "Khóa học Fintech và Khởi nghiệp Công nghệ cung cấp cái nhìn sâu sắc về cách công nghệ đang cách mạng hóa ngành tài chính. Học viên sẽ tìm hiểu về ngân hàng kỹ thuật số, mô hình kinh doanh fintech, các công cụ tài chính, và phân tích định lượng.",
-        url: "https://iclstech.edu.vn/course/Fintech",
+        url: "https://iclstech.edu.vn/khoa-hoc/Fintech",
         keywords: [
           "Khóa học Fintech",
           "Ngân hàng kỹ thuật số",
@@ -108,7 +108,7 @@ export const generateMetadataCourse = (courseid: string): Metadata => {
         title: "Khoá học Python Foundation",
         description:
           "Khóa học Python cơ bản giúp bạn nắm vững kiến thức lập trình từ những khái niệm đơn giản đến nâng cao. Phù hợp cho người mới bắt đầu, khóa học mang đến nền tảng vững chắc để bạn tự tin áp dụng Python vào các dự án thực tế và phát triển kỹ năng lập trình trong tương lai.",
-        url: "https://iclstech.edu.vn/course/Python-Foundation",
+        url: "https://iclstech.edu.vn/khoa-hoc/Python-Foundation",
         keywords: [
           "Khóa học Python cơ bản",
           "Học lập trình Python cho người mới bắt đầu",
@@ -133,9 +133,9 @@ export const generateMetadataCourse = (courseid: string): Metadata => {
 
     default:
       return generateMetadataWebsite({
-        title: "Khóa học không xác định",
+        title: "ICLS TECH",
         description: "Mô tả không có sẵn cho khóa học này.",
-        url: "https://iclstech.edu.vn/course/unknown",
+        url: "https://iclstech.edu.vn/khoa-hoc/unknown",
         keywords: ["Khóa học", "Giáo dục"],
         imageUrl: "/logoICLS.png",
         twitterHandle: "@iclstech",

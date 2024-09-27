@@ -15,9 +15,9 @@ const CourseLayout = ({ children, params }: CourseLayoutProps) => {
 
   // Render layout based on courseid
   switch (courseid) {
-    case "Algo-Trade-101":
+    case "khoa-hoc-algorithmic-trading-machine-learning-co-ban-101":
       return <AlgoTrade101Layout>{children}</AlgoTrade101Layout>;
-    case "Algo-Trade-201":
+    case "khoa-hoc-algorithmic-trading-machine-learning-foundation-201":
       return <AlgoTrade201Layout>{children}</AlgoTrade201Layout>;
     case "Fintech":
       return <FintechLayout>{children}</FintechLayout>;

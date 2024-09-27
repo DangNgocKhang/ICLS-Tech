@@ -4,19 +4,19 @@ import CourseCard from "./CourseCard";
 const CourseCardList: React.FC = () => {
   const courseData = [
     {
-      path: "course/Algo-Trade-101",
+      path: "khoa-hoc/khoa-hoc-algorithmic-trading-machine-learning-co-ban-101",
       title: "Khoá học Algorithmic Trading & Machine Learning Cơ Bản 101",
     },
     {
-      path: "course/Algo-Trade-201",
+      path: "khoa-hoc/khoa-hoc-algorithmic-trading-machine-learning-foundation-201",
       title: "Khoá học Algorithmic Trading & Machine Learning Nâng cao 201",
     },
     {
-      path: "course/Fintech",
+      path: "khoa-hoc/Fintech",
       title: "Khoá học Fintech - Công nghệ tài chính",
     },
     {
-      path: "course/Python-Foundation",
+      path: "khoa-hoc/Python-Foundation",
       title: "Khoá học ngôn ngữ lập trình Python Foundation",
     },
   ];

@@ -12,10 +12,10 @@ const CourseHeader: React.FC<CourseHeaderProps> = ({ title }) => {
 
   useEffect(() => {
     switch (title) {
-      case "Algo-Trade-101":
+      case "khoa-hoc-algorithmic-trading-machine-learning-co-ban-101":
         setCourseId("Algo Trade 101 cơ bản");
         break;
-      case "Algo-Trade-201":
+      case "khoa-hoc-algorithmic-trading-machine-learning-foundation-201":
         setCourseId("Algo Trade 201 Nâng cao");
         break;
       case "Fintech":
