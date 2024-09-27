@@ -3,7 +3,6 @@ import TargetStudent from "../TargetStudent";
 import CourseObjective from "../CourseObjective";
 import CourseBenefit from "../CourseBenefit";
 import ConditionToLearn from "../ConditionToLearn";
-import Seo from "@/app/Seo";
 
 interface LayoutProps {
   children: ReactNode;
@@ -12,6 +11,7 @@ interface Objective {
   title: string;
   items: string[];
 }
+
 const AlgoTrade201Layout = ({ children }: LayoutProps) => {
   const listTarget: string[] = [
     "Có đam mê học hỏi đầu tư, giao dịch tài chính, chứng khoán và công nghệ tài chính (FinTech)",
@@ -63,14 +63,6 @@ const AlgoTrade201Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      <Seo
-        title="Khóa học Algorithmic Trading & Machine learning 201 nâng cao"
-        description="Khóa học Algorithmic Trading Advanced được thiết kế cho chuyên gia tài chính và nhà phân tích định lượng, giúp hiểu sâu về toán học trong mô hình tài chính và giao dịch thuật toán. Khám phá các kỹ thuật nâng cao trong định giá chứng khoán phái sinh, tối ưu hóa danh mục đầu tư và quản lý rủi ro."
-        keywords="Algorithmic Trading Advanced, Khóa học giao dịch thuật toán nâng cao, Toán học trong giao dịch thuật toán, Mô hình tài chính và định giá phái sinh, Tối ưu hóa danh mục đầu tư, Mô phỏng Monte Carlo, Black-Scholes-Merton, Chiến lược giao dịch Forex và CFDs, Lý thuyết danh mục đầu tư Markowitz, Machine Learning trong tài chính, Định giá quyền chọn, Phân tích biến động tài chính, Công cụ phái sinh và thị trường, MetaTrader5 trong giao dịch, Chiến thuật carry trade, Statistical Arbitrage trong Forex, Kỹ thuật tối ưu hóa metaheuristic, Dự báo biến động tài chính, Xác suất và thống kê trong đầu tư, Phần mềm mô hình tài chính, Bot trading, Khoá dạy algo trade đầu tiên tại Việt Nam, Chứng quyền"
-        url="https://iclstech.edu.vn/course/Algo-Trade-201"
-        image="/logoICLS.png"
-        typeJsonSchema="Course"
-      />
       {children}
       <div className="grid grid-cols-12 px-6 md:px-10 py-10 md:py-10 gap-4">
         <ConditionToLearn listCondition={listCondition} />

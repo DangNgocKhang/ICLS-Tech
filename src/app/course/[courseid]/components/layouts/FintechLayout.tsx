@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 import TargetStudent from "../TargetStudent";
 import CourseObjective from "../CourseObjective";
 import CourseBenefit from "../CourseBenefit";
-import Seo from "@/app/Seo";
 
 interface LayoutProps {
   children: ReactNode;
@@ -46,19 +45,14 @@ const FintechLayout = ({ children }: LayoutProps) => {
 
   return (
     <>
-    <Seo
-        title="Khoá học Fintech - Công nghệ tài chính"
-        description="Khóa học Fintech và Khởi nghiệp Công nghệ cung cấp cái nhìn sâu sắc về cách công nghệ đang cách mạng hóa ngành tài chính. Học viên sẽ tìm hiểu về ngân hàng kỹ thuật số, mô hình kinh doanh fintech, các công cụ tài chính, và phân tích định lượng."
-        keywords="Khóa học Fintech, Ngân hàng kỹ thuật số, Khởi nghiệp công nghệ, Mô hình kinh doanh fintech, Công cụ tài chính, Phân tích định lượng, Tài chính doanh nghiệp, Định giá cổ phiếu, Thị trường tài chính, Chiến lược đầu tư, Blockchain và crypto, Ứng dụng công nghệ trong tài chính, Hệ sinh thái fintech, Phân tích thị trường bất động sản, R&D và khởi nghiệp, Lập kế hoạch kinh doanh, Tối ưu hóa tài chính, Phát triển sản phẩm khởi nghiệp, Case study fintech, Kết nối hệ sinh thái khởi nghiệp"
-        url="https://iclstech.edu.vn/course/Fintech"
-        image="/logoICLS.png"
-        typeJsonSchema="Course"
-      />
       {children}
       <div className="grid grid-cols-12 px-6 md:px-10 py-10 md:py-10 gap-4">
         <CourseObjective listObjective={listObjective} />
         <TargetStudent listTarget={listTarget} />
-        <CourseBenefit listBenefit={listBenefit} title={"HỖ TRỢ TỪ ICLS TECH"}/>
+        <CourseBenefit
+          listBenefit={listBenefit}
+          title={"HỖ TRỢ TỪ ICLS TECH"}
+        />
       </div>
     </>
   );

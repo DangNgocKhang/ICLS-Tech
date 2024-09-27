@@ -21,7 +21,10 @@ export default function RootLayout({
   const { width } = useWindowDimensions();
   return (
     <html lang="en">
-      <title>ICLS TECH</title>
+      <head>
+        <title>ICLS TECH</title>
+        <meta charSet="utf-8" />
+      </head>
       <body className="">
         <QueryClientProvider client={queryClient}>
           <ReactQueryDevtools initialIsOpen={false} />

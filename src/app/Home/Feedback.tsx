@@ -1,3 +1,4 @@
+"use client"
 import { assets } from "@/assets/assets";
 import TestimonialCard from "./TestimonialCard";
 import Image from "next/image";

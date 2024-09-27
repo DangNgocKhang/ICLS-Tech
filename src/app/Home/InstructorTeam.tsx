@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef } from "react";
 import InstructorCard from "./InstructorCard";
 import { assets, listLecturers } from "@/assets/assets";
