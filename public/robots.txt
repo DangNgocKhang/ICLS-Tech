@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://iclstech.edu.vn
+
+# Sitemaps
+Sitemap: https://iclstech.edu.vn/sitemap.xml

@@ -28,7 +28,7 @@ const CircularBackground: React.FC<CircularBackgroundProps> = ({
   }, [sequence.length]);
 
   return (
-    <div className="h-[20dvh] md:h-[50dvh] xl:h-[60dvh]  overflow-hidden relative">
+    <div className="h-[20vh] md:h-[50vh] xl:h-[60vh]  overflow-hidden relative">
       <Image
         loading="lazy"
         height={554}

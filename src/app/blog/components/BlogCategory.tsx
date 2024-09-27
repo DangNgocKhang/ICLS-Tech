@@ -1,17 +1,13 @@
 import { assets } from "@/assets/assets";
+import BlogPost from "@/types/Blog";
 import Image from "next/image";
 import React from "react";
 
-interface BlogCategoryProps {
-  date: string;
-  category: string;
-  title: string;
-  imageUrl?: string;
-}
+type BlogCategoryProps = Omit<BlogPost, "id">;
 
 const BlogCategory: React.FC<BlogCategoryProps> = ({
   date,
-  category,
+  tag,
   title,
   imageUrl,
 }) => {
@@ -23,7 +19,7 @@ const BlogCategory: React.FC<BlogCategoryProps> = ({
           height={86}
           width={86}
           src={imageUrl ? imageUrl : ""}
-          alt="imageUrl"
+          alt={title}
           className="object-contain"
         />
       </div>
@@ -43,7 +39,7 @@ const BlogCategory: React.FC<BlogCategoryProps> = ({
               <span>{date}</span>
             </div>
             <div className="h-max w-max bg-primary-blue-lighter text-xs line-clamp-1">
-              {category}
+              {tag}
             </div>
           </div>
         </div>

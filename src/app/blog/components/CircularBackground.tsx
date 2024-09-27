@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CircularBackground: React.FC = () => {
   return (
-    <div className="h-[20dvh] md:h-[50dvh] xl:h-[85dvh] overflow-hidden relative">
+    <div className="h-[20vh] md:h-[50vh] xl:h-[85vh] overflow-hidden relative">
       <Image
         loading="lazy"
         height={554}

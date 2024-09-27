@@ -1,7 +1,7 @@
-// src/components/Banner.tsx
 import React, { useEffect, useState } from "react";
 import { listBanners } from "@/assets/assets";
 import ButtonPrimaryWhite from "../components/ButtonPrimaryWhite";
+import Image from "next/image"; // Import the Next.js Image component
 
 const Banner: React.FC = () => {
   const images = listBanners;
@@ -14,6 +14,7 @@ const Banner: React.FC = () => {
 
     return () => clearInterval(interval);
   }, [images.length]);
+
   const handleScroll = () => {
     window.scrollBy({
       top:
@@ -21,6 +22,7 @@ const Banner: React.FC = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <div className="relative w-full h-max lg:h-screen overflow-x-hidden">
       <div className="absolute top-24 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2 h-max w-max z-10 flex">
@@ -33,12 +35,12 @@ const Banner: React.FC = () => {
               CỘNG ĐỒNG
             </h2>
             <p className="lg:mt-5 text-base md:text-3xl lg:text-4xl max-w-[95dvw] leading-snug">
-              Quantitative trading <br className=" md:hidden"/> đầu tư định lượng
+              Quantitative trading <br className="md:hidden" /> đầu tư định lượng
             </p>
           </header>
           
-          <ButtonPrimaryWhite value="KHÁM PHÁ NGAY" handleClick={handleScroll} stylElement="self-center mt-2 md:mt-8"/>
-          </section>
+          <ButtonPrimaryWhite value="KHÁM PHÁ NGAY" handleClick={handleScroll} stylElement="self-center mt-2 md:mt-8" />
+        </section>
       </div>
 
       <div
@@ -46,13 +48,17 @@ const Banner: React.FC = () => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-          <div
-            key={index}
-            className="w-full h-[40vh] lg:h-screen bg-cover bg-no-repeat flex-shrink-0"
-            style={{ backgroundImage: `url(${image.src})` }}
-          ></div>
+          <div key={index} className="w-full h-[40vh] lg:h-screen shrink-0 relative">
+            <Image
+              src={image.src}
+              alt={`Banner ${index}`}
+              layout="fill"
+              priority={index === 0}
+            />
+          </div>
         ))}
       </div>
+
       <div className="hidden absolute bottom-4 left-1/2 transform -translate-x-1/2 md:flex space-x-2">
         {images.map((_, index) => (
           <button

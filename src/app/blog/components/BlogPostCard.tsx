@@ -1,17 +1,13 @@
 import { assets } from "@/assets/assets";
+import BlogPost from "@/types/Blog";
 import Image from "next/image";
 import React from "react";
 
-interface BlogPostCardProps {
-  date: string;
-  category: string;
-  title: string;
-  imageUrl?: string;
-}
+type BlogPostCardProps = Omit<BlogPost, "id">;
 
 const BlogPostCard: React.FC<BlogPostCardProps> = ({
   date,
-  category,
+  tag,
   title,
   imageUrl,
 }) => {
@@ -19,11 +15,12 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
     <div className="w-full h-[100px] md:h-[150px] flex">
       <div className="md:h-full md:w-[250px] overflow-hidden">
         {
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
+            width={250}
+            height={100}
             loading="lazy"
-            src={imageUrl ? imageUrl : ""}
-            alt="iconTimeCircle"
+            src={ imageUrl}
+            alt={title}
             className="object-fill h-[100px] w-[100px] md:h-full md:w-full "
           />
         }
@@ -43,7 +40,7 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
               <span>{date}</span>
             </div>
             <div className="h-max w-max bg-primary-blue-lighter md:px-2 text-xs md:text-base line-clamp-1">
-              {category}
+              {tag}
             </div>
           </div>
           <div className="text-base md:text-2xl font-bold break-normal line-clamp-2 md:line-clamp-3">

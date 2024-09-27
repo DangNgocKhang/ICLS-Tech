@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import TargetStudent from "../TargetStudent";
 import CourseObjective from "../CourseObjective";
 import CourseBenefit from "../CourseBenefit";
+import Seo from "@/app/Seo";
 
 interface LayoutProps {
   children: ReactNode;
@@ -49,6 +50,14 @@ const PythonFoundationLayout = ({ children }: LayoutProps) => {
 
   return (
     <>
+       <Seo
+        title="Khoá học Python Foundation"
+        description="Khóa học Python cơ bản giúp bạn nắm vững kiến thức lập trình từ những khái niệm đơn giản đến nâng cao. Phù hợp cho người mới bắt đầu, khóa học mang đến nền tảng vững chắc để bạn tự tin áp dụng Python vào các dự án thực tế và phát triển kỹ năng lập trình trong tương lai."
+        keywords="Khóa học Python cơ bản, Học lập trình Python cho người mới bắt đầu, Python cho người mới bắt đầu, Học Python online miễn phí, Lập trình Python cơ bản, Khóa học lập trình Python trực tuyến, Học Python từ đầu, Python cho lập trình viên mới, Tài liệu học Python cơ bản, Bài tập Python cho người mới, Hướng dẫn lập trình Python, Cài đặt Python và cấu hình, Khóa học Python chất lượng cao, Tìm hiểu về cấu trúc dữ liệu trong Python, Xử lý lỗi trong Python"
+        url="https://iclstech.edu.vn/course/Fintech"
+        image="/logoICLS.png"
+        typeJsonSchema="Course"
+      />
       {children}
       <div className="grid grid-cols-12 px-6 md:px-10 py-10 md:py-10 gap-4">
         <CourseObjective listObjective={listObjective} />

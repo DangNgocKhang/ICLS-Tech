@@ -10,8 +10,8 @@ const BlogSharing = () => {
         </h1>
       </div>
       <div className="flex items-center md:justify-evenly gap-10 overflow-hidden">
-        {blogPosts.map((blog, index) => (
-          <BlogCard key={index} {...blog} />
+        {blogPosts.map((blog) => (
+          <BlogCard key={blog.id} {...blog} />
         ))}
       </div>
     </main>

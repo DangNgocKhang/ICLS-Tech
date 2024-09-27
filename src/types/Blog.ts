@@ -1,6 +1,8 @@
 export default interface BlogPost {
-    date: string;
-    category: string;
-    title: string;
-    imageUrl: string;
-  }
+  id: string;
+  date: string;
+  tag: string;
+  title: string;
+  imageUrl: string;
+  category?:string
+}

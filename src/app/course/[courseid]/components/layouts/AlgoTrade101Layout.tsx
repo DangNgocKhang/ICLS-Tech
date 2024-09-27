@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import TargetStudent from "../TargetStudent";
 import CourseObjective from "../CourseObjective";
 import CourseBenefit from "../CourseBenefit";
+import Seo from "@/app/Seo";
 
 interface LayoutProps {
   children: ReactNode;
@@ -58,6 +59,14 @@ const AlgoTrade101Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
+      <Seo
+        title="Khóa học Algorithmic Trading & Machine learning 101 cơ bản"
+        description="Khóa học Algorithmic Trading cung cấp kiến thức toàn diện về giao dịch thuật toán bằng Python. Học viên sẽ khám phá thị trường tài chính, xây dựng bot trading, sử dụng API để truy cập dữ liệu, áp dụng phân tích kỹ thuật và mô hình dự báo, giúp bạn triển khai hệ thống giao dịch hiệu quả trên thị trường chứng khoán, Forex và cryptocurrency."
+        keywords="Algorithmic Trading bằng Python, Khóa học giao dịch thuật toán, Xây dựng bot trading, Giao dịch tự động với Python, Phân tích kỹ thuật trong giao dịch, Machine Learning trong giao dịch tài chính, Dữ liệu thị trường và API, Chiến lược giao dịch thuật toán, Quản lý rủi ro trong giao dịch, Hệ thống giao dịch tự động, Giao dịch Forex và Crypto, Phân tích thống kê trong đầu tư, Mô hình dự báo tài chính, Khóa học trực tuyến về giao dịch, Học giao dịch thuật toán cơ bản, Bot trading, Khoá dạy algo trade đầu tiên tại Việt Nam"
+        url="https://iclstech.edu.vn/course/Algo-Trade-101"
+        image="/logoICLS.png"
+        typeJsonSchema="Course"
+      />
       {children}
       <div className="grid grid-cols-12 px-6 md:px-10 py-10 md:py-10 gap-4">
         <CourseObjective listObjective={listObjective} />

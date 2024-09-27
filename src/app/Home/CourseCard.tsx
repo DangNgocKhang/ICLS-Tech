@@ -18,7 +18,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ path, title }) => {
         <Image
           loading="lazy"
           src={assets.brainBlue}
-          alt={title}
+          alt={"brainBlue"}
           height={100}
           width={100}
           className="hidden md:block xl:group-hover:hidden object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
@@ -26,7 +26,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ path, title }) => {
         <Image
           loading="lazy"
           src={assets.brainBlueLighter}
-          alt={title}
+          alt={"brainBlue"}
           height={100}
           width={100}
           className="block md:hidden xl:group-hover:block object-contain self-center max-w-full aspect-square scale-90	md:scale-100"
